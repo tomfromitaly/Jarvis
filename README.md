@@ -43,13 +43,15 @@ FORWARD-LOOKING INSIGHTS I want to ask "Can I afford a trip to Japan in October?
 
 PROACTIVE ALERTS It should tell me when something needs attention: overdue reimbursements, expiring loyalty points, unusual spending patterns, missed contributions, upcoming large expenses.
 
-HISTORICAL UNDERSTANDING When I first load my data, it should analyze patterns, detect anomalies, and ask me questions to understand what happened. "Your rent changed significantly in November. What happened?" This builds the life model.
+HISTORICAL UNDERSTANDING When I first load my data, it should analyze patterns, detect anomalies, and ask me questions to understand what happened. This builds the life model. See the detailed onboarding section below.
 
 SCENARIO MODELING I want to explore "what if" situations. What if I buy a car in June? What if I take two trips this quarter? How do different decisions affect my trajectory?
 
 DATA SOURCES
 
 Banking via CSV import from N26, AMEX, and Revolut.
+
+Flight history import. I can provide my 2025 flight history which helps identify trips and distinguish work from leisure travel.
 
 Manual input for work trips, life events, future plans, and loyalty balances.
 
@@ -82,6 +84,8 @@ People with financial relationships (partner contributions, expense splitting).
 Recurring transactions like subscriptions with expected amounts and change detection.
 
 Loyalty programs with balances and expiry tracking.
+
+Onboarding answers stored structured so the system remembers everything learned during the interview process.
 
 Design the schema to support the features described. Normalize appropriately but prioritize query simplicity for common operations.
 
@@ -119,13 +123,139 @@ INTERACTION PATTERNS Command bar is always accessible, perhaps with a keyboard s
 
 NO CHAT ELEMENTS No message bubbles. No conversation threads. No "AI is typing" indicators. No back-and-forth visible history. The system is an instrument I operate, not an entity I converse with.
 
+ONBOARDING AND INTERVIEW PROCESS
+
+This is the most critical part of the system. The onboarding must be exhaustive, structured, and thorough. It will take time. That is acceptable. The goal is to build a complete mental model of my financial life.
+
+ONBOARDING PHILOSOPHY
+
+The system knows nothing about me initially. It must learn everything by analyzing my data and asking me questions. Every assumption must be verified. Every pattern must be explained. Every relationship must be mapped.
+
+This is not a quick setup wizard. This is a comprehensive financial interview that may take 1-2 hours spread across multiple sessions. The system should save progress and allow me to continue later.
+
+STRUCTURED APPROACH
+
+The onboarding happens in distinct phases, each building on the previous. The system should track completion status and guide me through systematically.
+
+PHASE 1: DATA IMPORT AND INITIAL ANALYSIS
+
+Import all available data: bank CSVs, flight history, any other documents.
+
+The system analyzes everything before asking any questions. It builds hypotheses about my financial patterns that it will then verify with me.
+
+It identifies: all unique merchants, all recurring transactions, all location clusters, all large transactions, all transfers between accounts, all incoming transfers from other people, all trips based on location and timing.
+
+PHASE 2: INCOME AND EMPLOYMENT
+
+Identify my primary income source from transaction patterns.
+
+Ask: Who is my employer? What is my net monthly salary? Do I receive bonuses and when? Are there other income sources?
+
+Understand my pay schedule and typical deposit amounts.
+
+PHASE 3: HOUSING AND FIXED COSTS
+
+Identify rent or mortgage payments from recurring large transactions.
+
+Detect any changes in housing costs over time. If detected, ask what happened. Example: "Your rent changed from 916 EUR to 1700 EUR in November 2025. What happened?"
+
+Understand my living situation. Do I live alone? With a partner? Roommates?
+
+If with a partner: What is the cost split arrangement? Does the partner contribute directly to my account? How much and how often? Map the partner's transfers to understand the true housing cost.
+
+PHASE 4: RELATIONSHIPS AND SHARED EXPENSES
+
+This requires deep exploration. The system must understand that I pay for things on behalf of others and get reimbursed informally.
+
+Identify all incoming transfers from individuals (not companies). For each person who sends me money regularly, ask: Who is this person? What is the relationship? What are these transfers for?
+
+For my girlfriend specifically: Understand that I often pay for shared expenses (dinners, trips, groceries, activities) and she pays me back. This is different from her fixed monthly contribution for rent.
+
+The system should identify large personal expenses and ask: "You spent 450 EUR at Restaurant X on December 15. Was this just for you, or shared with someone? If shared, did you get paid back?"
+
+Build a model of expense sharing: What categories do I typically share? What is the usual split? How does reimbursement happen (transfer, cash, covers next expense)?
+
+PHASE 5: TRIP IDENTIFICATION AND CLASSIFICATION
+
+This is complex and must be thorough.
+
+Using transaction locations, flight history, and timing, identify every trip in my history. A trip is a cluster of transactions in a location away from my home city within a defined time window.
+
+For each identified trip, create a trip record and ask:
+
+Where was this trip? (verify the detected location) What were the dates? (verify the detected dates) Was this work or personal? If work: Was it fully reimbursable? Has it been reimbursed? When was reimbursement received or expected? If personal: Was I alone or with someone? If with someone, how were expenses split? Did I get paid back for their share? If mixed: Which expenses were work and which were personal?
+
+The system should use flight history to anchor trips. A flight to Buffalo on March 9 returning March 13 definitively establishes a trip. All transactions in Buffalo during that window should be associated with that trip.
+
+For each trip, calculate: total spend, amount reimbursable, amount shared with others, true personal cost.
+
+PHASE 6: LARGE TRANSACTION REVIEW
+
+Identify all transactions above a threshold (perhaps 200 EUR) that have not been explained by previous phases.
+
+For each, ask: What was this? Was it a one-time purchase? Was it shared? Was it reimbursed? Should it be categorized specially?
+
+Examples: "You spent 1200 EUR at Apple Store on February 3. What was this purchase? Was it for you or a gift? Was it reimbursed by anyone?" "You spent 680 EUR at Booking.com on December 10. I see you were in Paris December 14-18. Was this the hotel for that trip? Was this trip work or personal? Was the cost shared?"
+
+PHASE 7: RECURRING TRANSACTIONS
+
+Identify all recurring charges: subscriptions, memberships, regular bills.
+
+For each, verify: What is this service? Is it still active? Is it personal or shared? If shared, what is my true cost?
+
+Detect changes in recurring amounts and ask about them.
+
+PHASE 8: PATTERN VERIFICATION
+
+Present detected patterns and ask for confirmation:
+
+"I notice you spend an average of 400 EUR per month on dining. Does this seem right?" "Your spending increases by about 40% in December. Is this typical holiday spending?" "You receive transfers from [girlfriend name] averaging 850 EUR per month. Is this her contribution to shared expenses?"
+
+Allow me to correct any misunderstandings.
+
+PHASE 9: ANOMALY EXPLANATION
+
+Surface anything unusual that has not been explained:
+
+"In March 2025, your spending was 180% of your average. What happened?" "You received a 5000 EUR transfer from [unknown source]. What was this?" "There is a gap in your transaction history from June 1-15. Were you using a different payment method?"
+
+PHASE 10: FUTURE CONTEXT
+
+Ask about known upcoming events:
+
+Any planned trips? Any large purchases expected? Any life changes anticipated (moving, job change, etc.)? Any financial goals I should know about?
+
+ONBOARDING DATA STORAGE
+
+Every answer I provide must be stored in a structured way. Not as free text, but as typed data:
+
+Trip records with all attributes Person records with relationship type and financial patterns Life event records with dates and financial impact Expense sharing rules Reimbursement expectations Category preferences Verified patterns
+
+The system should be able to query this structured knowledge later. "What trips has Tommaso taken with his girlfriend?" should return a list, not require re-reading interview transcripts.
+
+ONBOARDING INTERFACE
+
+The onboarding interface can be more conversational than the main dashboard since it is a one-time process. However, it should still feel structured:
+
+Show progress through phases Display the data being discussed (transaction list, trip summary, etc.) Provide clear input methods (buttons for common answers, text for details) Allow skipping and returning to questions Save progress automatically Show what has been learned so far
+
+ONBOARDING RESUMPTION
+
+If I close the application mid-onboarding, it should resume exactly where I left off. It should also allow me to revisit and correct previous answers as I remember more details.
+
+POST-ONBOARDING LEARNING
+
+After initial onboarding, the system continues learning:
+
+New transactions that do not match known patterns trigger questions New trips are detected and need classification Changes in recurring amounts are flagged The system asks periodic clarifying questions as it notices things
+
 IMPLEMENTATION APPROACH
 
 Start with the foundation: project structure, database, CSV importers, basic dashboard.
 
-Add intelligence: categorization, work trip logic, pattern detection.
+Build the onboarding system: this is complex and should be built thoroughly before other features.
 
-Build the life model: relationships, events, historical onboarding.
+Add intelligence: categorization, work trip logic, pattern detection.
 
 Create the command interface: natural language parsing with dashboard responses.
 
@@ -151,6 +281,7 @@ I have described what I want to achieve. For how to achieve it, use your best ju
 
 Consider innovative approaches to:
 
+Making the onboarding feel efficient despite being thorough
 Visualizing complex financial relationships
 Detecting patterns I would not notice myself
 Making projections trustworthy and transparent
@@ -163,6 +294,7 @@ Optimizing points and loyalty programs
 Finding money I am leaving on the table
 Making the command bar feel powerful and intuitive
 Designing dashboard transitions that feel responsive and logical
+Storing and querying the knowledge learned during onboarding
 Surprise me with elegant solutions. The goal is a system I will actually use daily because it provides genuine value.
 
 CONSTRAINTS
@@ -172,7 +304,3 @@ Must run fully offline except for optional API calls. macOS only. Single user. N
 BEGIN
 
 Start by understanding the full scope, then create a plan. Build incrementally, starting with the foundation and evolving toward the complete vision.
-
-
-
-
