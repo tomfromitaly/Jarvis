@@ -1,382 +1,243 @@
-# Jarvis
-CFO Dashboard and AI Assistant
-
 PROJECT: Personal Financial Command Center
 
-OVERVIEW
+VISION
 
-Build a local-first personal financial advisor that runs on macOS. This is NOT a chatbot. It is a persistent financial intelligence system that understands my life context, tracks my money across multiple accounts, and provides proactive insights.
+I want complete clarity over my financial life. Not just tracking expenses, but understanding my entire wealth picture: where my money is, where it's going, what's driving changes, and what I should do about it.
 
-The system should feel like having a personal CFO who knows everything about my financial situation and life circumstances.
+I have a complex financial situation spread across multiple bank accounts, credit cards, investments, company equity, and pending reimbursements. My income fluctuates with bonuses, RSU vesting, and delayed work expense reimbursements. I pay for things on behalf of my girlfriend and get reimbursed informally. I travel frequently for work and personally.
 
-CORE PHILOSOPHY
+Right now I have no single place that tells me: What is my actual net worth? Am I building wealth? What's driving the changes? Am I leaking money somewhere? Am I missing opportunities?
 
-Local-first: Everything runs on my MacBook. Data never leaves my machine except for optional LLM API calls for complex reasoning.
+I want a system that acts as my personal CFO. It knows everything about my financial life, understands the context behind the numbers, and gives me genuine insight rather than just reports.
 
-Context-aware: The system understands my life, not just my transactions. Relationships, work patterns, life phases, future plans.
+THE CORE QUESTIONS IT MUST ANSWER
 
-Proactive: It surfaces insights and warnings without me asking.
+AM I BUILDING WEALTH?
 
-Minimal friction: Importing data, asking questions, and getting answers should be effortless.
+What is my total net worth today across all assets and liabilities? How has it changed over the last month, quarter, year? What's my trajectory? Am I on track for my goals?
 
-WHO I AM
+WHAT'S DRIVING THE CHANGES?
 
-I have a complex financial situation. I travel frequently for work, pay expenses personally, and get reimbursed 1-3 months later. This creates a distorted view of my actual financial position.
+My wealth grew by X this month. Why? How much came from savings versus investment gains versus RSU vesting? My expenses were high this month. What drove that? Was it a one-time thing or a trend?
 
-I use three accounts: N26 (primary), AMEX (work expenses), Revolut (travel/secondary).
+WHERE AM I LEAKING MONEY?
 
-I live with my girlfriend who contributes monthly to shared expenses.
+Are there subscriptions I'm not using? Fees I could avoid? Money sitting idle that could be working harder? Points expiring? Suboptimal choices I'm making without realizing?
 
-I have loyalty points across multiple airline programs that I want to track.
+WHAT AM I MISSING?
 
-My financial picture only makes sense when you understand my life context.
+Opportunities to optimize taxes. Better account or card options for my usage patterns. Concentration risk in my portfolio. Cash earning nothing when it could be invested.
 
-WHAT I WANT TO ACHIEVE
+WHAT SHOULD I ACTUALLY FOCUS ON?
 
-TRUE FINANCIAL CLARITY
-I want to know my real financial position at any moment. Not just account balances, but: What do I actually have? What is owed to me? What do I owe? What is my money situation if I account for pending reimbursements and upcoming obligations?
+Of all the things I could optimize, what would have the biggest impact? Is it worth cutting back on dining, or would moving idle cash to investments matter more? Give me prioritized, actionable insight.
 
-LIFE-AWARE INTELLIGENCE
-The system should understand that my rent increased because I moved in with my girlfriend, and that her monthly transfers offset this. It should know that a week of expenses in Buffalo means work trip, not spending spree. It should recognize patterns across my life phases and adjust its understanding accordingly.
+CAN I AFFORD THIS?
 
-WORK TRIP MANAGEMENT
-I need to tell it "I am in Buffalo March 9-13, everything is work-related" and have it automatically handle categorization, tracking, and reimbursement monitoring for that trip.
+If I want to take a trip to Japan or buy a car, can I actually afford it? Not just "do I have the cash" but factoring in upcoming expenses, reimbursement timing, investment goals, and my overall financial health.
 
-FORWARD-LOOKING INSIGHTS
-I want to ask "Can I afford a trip to Japan in October?" and get an intelligent answer that considers my current position, expected reimbursements, historical patterns, and known upcoming expenses.
+MY FINANCIAL LANDSCAPE
 
-PROACTIVE ALERTS
-It should tell me when something needs attention: overdue reimbursements, expiring loyalty points, unusual spending patterns, missed contributions, upcoming large expenses.
+BANK ACCOUNTS N26: Primary checking, salary deposits, rent, daily expenses Revolut: Travel, foreign currency, secondary spending AMEX: Credit card, primarily work expenses, some personal
 
-HISTORICAL UNDERSTANDING
-When I first load my data, it should analyze patterns, detect anomalies, and ask me questions to understand what happened. This builds the life model. See the detailed onboarding section below.
+INVESTMENTS Personal investment accounts: I will provide what I buy and at what price. The system should track current market value using live or daily stock prices.
 
-SCENARIO MODELING
-I want to explore "what if" situations. What if I buy a car in June? What if I take two trips this quarter? How do different decisions affect my trajectory?
+COMPANY EQUITY RSUs from my employer: I will upload my RSU contracts showing vesting schedule, grant prices, and quantities. The system should track vested versus unvested, current value based on stock price, and upcoming vesting events.
 
-DATA SOURCES
+PENDING REIMBURSEMENTS Work travel expenses I pay personally and get reimbursed 1-3 months later. This is essentially money owed to me and should be tracked as an asset.
 
-Banking via CSV import from N26, AMEX, and Revolut.
+LOYALTY PROGRAMS Miles and More, Flying Blue, Qatar Privilege Club. Points have real value and can expire.
 
-Flight history import. I can provide my 2025 flight history which helps identify trips and distinguish work from leisure travel.
+INCOME STREAMS Base salary: Regular but I'll provide details Bonuses: Sporadic, varying amounts RSU vesting: Periodic based on schedule Reimbursements: Delayed, variable timing Girlfriend contributions: Regular monthly amount for shared housing costs
 
-Manual input for work trips, life events, future plans, and loyalty balances.
+RELATIONSHIPS AND SHARED EXPENSES I live with my girlfriend. She contributes a fixed amount monthly toward rent. I also frequently pay for shared expenses like dinners, trips, groceries, and activities. She pays me back, sometimes immediately, sometimes later, sometimes by covering the next expense. The system must understand this to calculate my true costs.
 
-Optional browser automation to fetch CSVs automatically.
+WORK TRAVEL I travel frequently for work. I pay for flights, hotels, meals, and transport personally using AMEX. These get reimbursed by my employer but with significant delay. During a work trip, my expenses spike dramatically but my true cost is zero. The system must understand which expenses are work-related and track reimbursement status.
 
-TECHNICAL FOUNDATION
+PERSONAL TRAVEL I also travel for leisure, often with my girlfriend. These trips have real costs but are often shared. The system should understand the difference between work and leisure travel and calculate true personal cost for leisure trips.
 
-Python as the core language.
+WHAT THE SYSTEM MUST DO
 
-SQLite for local database storage. Single file, no server, portable.
+BUILD A COMPLETE WEALTH PICTURE
 
-Streamlit for the dashboard interface. Or suggest alternatives if something better fits the UI vision described below.
+Track everything I own and owe: Cash in bank accounts Investment portfolio at current market value Company shares vested and unvested Pending reimbursements owed to me Loyalty points estimated value Credit card balances owed Any other assets or liabilities
 
-LOCAL LLM STRATEGY
+Calculate true net worth. Show how it changes over time.
 
-Use Ollama with the latest available Qwen model. As of now, Qwen 3.5 is the newest release. The system should use whatever the most capable Qwen model available in Ollama is. This provides strong reasoning capability completely free and local.
+UNDERSTAND THE DRIVERS
 
-Check available models with: ollama list
-Pull the latest Qwen with: ollama pull qwen3.5 (or qwen2.5:14b as fallback)
+When my wealth changes, explain why. Break it down: How much came from income (salary, bonus, RSU vesting) How much came from investment performance How much came from savings (income minus expenses) How much came from reimbursements received What major expenses affected it
 
-The model choice should be configurable in settings so I can swap models as newer versions release. The architecture must be model-agnostic.
+DRILL DOWN INTO EXPENSES
 
-For most tasks, the local Qwen model should be sufficient: categorization, command parsing, pattern analysis, onboarding questions, basic projections. This keeps costs at zero for daily use.
+Don't just show categories. Show what's normal versus unusual. If I spent more on dining this month, was it a trend or a one-time event? Was it during a trip? Was it shared with my girlfriend?
 
-OPTIONAL EXTERNAL LLM API
+Connect expenses to context. A dinner in Hamburg during a weekend trip with my girlfriend is different from random Tuesday takeout. The system should understand this.
 
-For genuinely complex reasoning that exceeds local model capability, the system can optionally call an external API. This should be rare.
+DETECT TRENDS AND ANOMALIES
 
-During setup, the system should ask which provider I want to use: Claude, xAI (Grok), OpenAI, or none. This should be configurable and swappable. I currently have credits on xAI.
+If my spending in a category is creeping up over months, alert me. If there's a one-time spike, explain it and don't treat it as a trend. Show me patterns I wouldn't notice myself.
 
-The system should clearly indicate when it is using external API versus local model. I want to know when I am spending credits.
+IDENTIFY LEAKAGE AND OPPORTUNITIES
 
-DATA MODEL CONCEPTS
+Actively look for money I'm wasting or leaving on the table: Unused subscriptions Fees I could avoid Cash sitting idle Points about to expire Tax optimization opportunities Better options for my usage patterns
 
-The database should capture:
+PROVIDE ACTIONABLE RECOMMENDATIONS
 
-Transactions from all accounts with deduplication, categorization, and links to trips/people/events.
+Don't just show data. Tell me what to do. Rank recommendations by impact. "Moving 10,000 EUR from N26 to investments would add 700 EUR per year. That's worth more than cutting back on coffee."
 
-Work trips with dates, destinations, expense tracking, and reimbursement status.
+HANDLE THE COMPLEXITY OF MY LIFE
 
-Life events that explain financial pattern changes.
+Understand that: Work expenses are not real spending Girlfriend reimbursements offset shared costs Reimbursement timing affects cash flow but not true wealth RSU vesting is income Investment gains and losses matter Some months look expensive but are actually fine when context is understood
 
-People with financial relationships (partner contributions, expense splitting).
+THE ONBOARDING PROCESS
 
-Recurring transactions like subscriptions with expected amounts and change detection.
+The system knows nothing initially. It must learn everything about my financial life through a thorough interview process.
 
-Loyalty programs with balances and expiry tracking.
+WHAT IT NEEDS TO LEARN
 
-Onboarding answers stored structured so the system remembers everything learned during the interview process.
+My income: Employer, salary, bonus patterns, RSU schedule My housing: Rent, living situation, cost sharing arrangement with girlfriend My relationships: Who sends me money, why, what expenses are shared My trips: Every trip in my history, work versus personal, expense breakdown, reimbursement status My recurring expenses: Subscriptions, memberships, regular bills My investments: What I hold, what I've bought, my strategy My company equity: RSU grants, vesting schedule, current holdings My patterns: Typical spending by category, seasonal variations, anomalies explained My goals: What am I trying to achieve financially
 
-Model configuration storing which local model and which external API (if any) is configured.
+HOW IT LEARNS
 
-Design the schema to support the features described. Normalize appropriately but prioritize query simplicity for common operations.
+Import all available data: Bank CSVs, flight history, RSU contracts, investment records. I want a folder for this where I can just dump files and they will be elaborated. Monthly I can upload bank statements, payslips etc. One folder for manual inputs. I will also attach my flights record to be more easily linked to work trips
 
-INTELLIGENCE APPROACH
+Analyze the data to form hypotheses about my patterns.
 
-Use a tiered approach:
+Ask me structured questions to verify and fill gaps. This is not a quick setup. It may take 1-2 hours spread across sessions. That's fine. The goal is complete understanding.
 
-Tier 1 - Rules: Simple pattern matching for known merchants and transaction types. Instant, no LLM needed.
+For every trip detected: Ask if it was work or personal, who I was with, how expenses were split, reimbursement status.
 
-Tier 2 - Local LLM: Qwen via Ollama for categorization, command parsing, analysis, onboarding. Free, private, handles 95% of needs.
+For every recurring transfer from an individual: Ask who they are, what the relationship is, what the transfers represent.
 
-Tier 3 - External API: Optional cloud LLM for complex multi-factor reasoning. Only when local model is insufficient. User-configured provider.
+For every large or unusual transaction: Ask what it was, whether it was shared, whether it was reimbursed.
 
-The system should work fully offline using only Tier 1 and Tier 2. External API enhances but is never required.
+For every pattern detected: Verify it's accurate, ask for context if needed.
 
-USER INTERFACE VISION
+Store everything learned in a structured way so it can be queried later. Not free text, but typed data: trip records, person records, expense sharing rules, verified patterns.
 
-This is critical. The interface must NOT feel like a chat application.
-
-COMMAND BAR PARADIGM
-Think Spotlight, Raycast, or a terminal. A single input field where I type commands or questions. The system responds by updating the dashboard, not by adding messages to a conversation thread.
-
-Examples of inputs:
-"buffalo march 9-13 work trip"
-"can I afford japan in october"
-"show spending last 3 months"
-"mark sao paulo reimbursed 2340"
-"why is february spending so high"
-
-The response appears as dashboard content: cards, tables, charts, summaries. Not as a chat bubble. The input field clears after each command. There is no conversation history visible. Each interaction is atomic.
-
-DASHBOARD AS CANVAS
-The main view is a dashboard that updates based on context and commands. Default state shows the most important information: true balance, alerts, recent activity, upcoming concerns.
-
-When I ask a question, the dashboard transforms to show the answer. Ask about spending trends, it shows charts. Ask about a trip, it shows trip details. Ask if I can afford something, it shows a projection breakdown.
-
-INFORMATION ARCHITECTURE
-Primary: True balance, alerts requiring attention, critical metrics.
-Secondary: Account breakdown, pending reimbursements, monthly summary.
-On-demand: Transaction lists, trip details, historical analysis, projections.
-
-The interface should be information-dense but not cluttered. Professional, like a Bloomberg terminal meets a modern design system.
-
-INTERACTION PATTERNS
-Command bar is always accessible, perhaps with a keyboard shortcut.
-Dashboard sections are clickable for drill-down.
-Quick actions available for common tasks: add trip, import CSV, mark reimbursed.
-Settings accessible but not prominent.
-
-NO CHAT ELEMENTS
-No message bubbles. No conversation threads. No "AI is typing" indicators. No back-and-forth visible history. The system is an instrument I operate, not an entity I converse with.
-
-ONBOARDING AND INTERVIEW PROCESS
-
-This is the most critical part of the system. The onboarding must be exhaustive, structured, and thorough. It will take time. That is acceptable. The goal is to build a complete mental model of my financial life.
-
-ONBOARDING PHILOSOPHY
-
-The system knows nothing about me initially. It must learn everything by analyzing my data and asking me questions. Every assumption must be verified. Every pattern must be explained. Every relationship must be mapped.
-
-This is not a quick setup wizard. This is a comprehensive financial interview that may take 1-2 hours spread across multiple sessions. The system should save progress and allow me to continue later.
-
-The onboarding runs entirely on the local Qwen model. No external API needed.
-
-STRUCTURED APPROACH
-
-The onboarding happens in distinct phases, each building on the previous. The system should track completion status and guide me through systematically.
-
-PHASE 1: DATA IMPORT AND INITIAL ANALYSIS
-
-Import all available data: bank CSVs, flight history, any other documents.
-
-The system analyzes everything before asking any questions. It builds hypotheses about my financial patterns that it will then verify with me.
-
-It identifies: all unique merchants, all recurring transactions, all location clusters, all large transactions, all transfers between accounts, all incoming transfers from other people, all trips based on location and timing.
-
-PHASE 2: INCOME AND EMPLOYMENT
-
-Identify my primary income source from transaction patterns.
-
-Ask: Who is my employer? What is my net monthly salary? Do I receive bonuses and when? Are there other income sources?
-
-Understand my pay schedule and typical deposit amounts.
-
-PHASE 3: HOUSING AND FIXED COSTS
-
-Identify rent or mortgage payments from recurring large transactions.
-
-Detect any changes in housing costs over time. If detected, ask what happened. Example: "Your rent changed from 916 EUR to 1700 EUR in November 2025. What happened?"
-
-Understand my living situation. Do I live alone? With a partner? Roommates?
-
-If with a partner: What is the cost split arrangement? Does the partner contribute directly to my account? How much and how often? Map the partner's transfers to understand the true housing cost.
-
-PHASE 4: RELATIONSHIPS AND SHARED EXPENSES
-
-This requires deep exploration. The system must understand that I pay for things on behalf of others and get reimbursed informally.
-
-Identify all incoming transfers from individuals (not companies). For each person who sends me money regularly, ask: Who is this person? What is the relationship? What are these transfers for?
-
-For my girlfriend specifically: Understand that I often pay for shared expenses (dinners, trips, groceries, activities) and she pays me back. This is different from her fixed monthly contribution for rent.
-
-The system should identify large personal expenses and ask: "You spent 450 EUR at Restaurant X on December 15. Was this just for you, or shared with someone? If shared, did you get paid back?"
-
-Build a model of expense sharing: What categories do I typically share? What is the usual split? How does reimbursement happen (transfer, cash, covers next expense)?
-
-PHASE 5: TRIP IDENTIFICATION AND CLASSIFICATION
-
-This is complex and must be thorough.
-
-Using transaction locations, flight history, and timing, identify every trip in my history. A trip is a cluster of transactions in a location away from my home city within a defined time window.
-
-For each identified trip, create a trip record and ask:
-
-Where was this trip? (verify the detected location)
-What were the dates? (verify the detected dates)
-Was this work or personal?
-If work: Was it fully reimbursable? Has it been reimbursed? When was reimbursement received or expected?
-If personal: Was I alone or with someone? If with someone, how were expenses split? Did I get paid back for their share?
-If mixed: Which expenses were work and which were personal?
-
-The system should use flight history to anchor trips. A flight to Buffalo on March 9 returning March 13 definitively establishes a trip. All transactions in Buffalo during that window should be associated with that trip.
-
-For each trip, calculate: total spend, amount reimbursable, amount shared with others, true personal cost.
-
-PHASE 6: LARGE TRANSACTION REVIEW
-
-Identify all transactions above a threshold (perhaps 200 EUR) that have not been explained by previous phases.
-
-For each, ask: What was this? Was it a one-time purchase? Was it shared? Was it reimbursed? Should it be categorized specially?
-
-Examples:
-"You spent 1200 EUR at Apple Store on February 3. What was this purchase? Was it for you or a gift? Was it reimbursed by anyone?"
-"You spent 680 EUR at Booking.com on December 10. I see you were in Paris December 14-18. Was this the hotel for that trip? Was this trip work or personal? Was the cost shared?"
-
-PHASE 7: RECURRING TRANSACTIONS
-
-Identify all recurring charges: subscriptions, memberships, regular bills.
-
-For each, verify: What is this service? Is it still active? Is it personal or shared? If shared, what is my true cost?
-
-Detect changes in recurring amounts and ask about them.
-
-PHASE 8: PATTERN VERIFICATION
-
-Present detected patterns and ask for confirmation:
-
-"I notice you spend an average of 400 EUR per month on dining. Does this seem right?"
-"Your spending increases by about 40% in December. Is this typical holiday spending?"
-"You receive transfers from [girlfriend name] averaging 850 EUR per month. Is this her contribution to shared expenses?"
-
-Allow me to correct any misunderstandings.
-
-PHASE 9: ANOMALY EXPLANATION
-
-Surface anything unusual that has not been explained:
-
-"In March 2025, your spending was 180% of your average. What happened?"
-"You received a 5000 EUR transfer from [unknown source]. What was this?"
-"There is a gap in your transaction history from June 1-15. Were you using a different payment method?"
-
-PHASE 10: FUTURE CONTEXT
-
-Ask about known upcoming events:
-
-Any planned trips?
-Any large purchases expected?
-Any life changes anticipated (moving, job change, etc.)?
-Any financial goals I should know about?
-
-ONBOARDING DATA STORAGE
-
-Every answer I provide must be stored in a structured way. Not as free text, but as typed data:
-
-Trip records with all attributes
-Person records with relationship type and financial patterns
-Life event records with dates and financial impact
-Expense sharing rules
-Reimbursement expectations
-Category preferences
-Verified patterns
-
-The system should be able to query this structured knowledge later. "What trips has Tommaso taken with his girlfriend?" should return a list, not require re-reading interview transcripts.
-
-ONBOARDING INTERFACE
-
-The onboarding interface can be more conversational than the main dashboard since it is a one-time process. However, it should still feel structured:
-
-Show progress through phases
-Display the data being discussed (transaction list, trip summary, etc.)
-Provide clear input methods (buttons for common answers, text for details)
-Allow skipping and returning to questions
-Save progress automatically
-Show what has been learned so far
-
-ONBOARDING RESUMPTION
-
-If I close the application mid-onboarding, it should resume exactly where I left off. It should also allow me to revisit and correct previous answers as I remember more details.
+Allow me to pause and resume. Save progress automatically. Let me correct previous answers as I remember more details.
 
 POST-ONBOARDING LEARNING
 
-After initial onboarding, the system continues learning:
+Continue learning after initial setup: New transactions that don't match patterns trigger questions New trips need classification Changes in recurring amounts get flagged Periodic check-ins to verify understanding
 
-New transactions that do not match known patterns trigger questions
-New trips are detected and need classification
-Changes in recurring amounts are flagged
-The system asks periodic clarifying questions as it notices things
+THE INTERFACE
 
-IMPLEMENTATION APPROACH
+This must NOT feel like a chat application. No message bubbles. No conversation threads. No "AI is typing" indicators.
 
-Start with the foundation: project structure, database, CSV importers, basic dashboard.
+COMMAND BAR
 
-Build the onboarding system: this is complex and should be built thoroughly before other features.
+A single input field where I type commands or questions. Think Spotlight or Raycast. The system responds by updating the dashboard, not by adding chat messages. Each interaction is atomic. The input clears after each command.
 
-Add intelligence: categorization, work trip logic, pattern detection.
+Examples: "what's my net worth" "why did my wealth change this month" "buffalo march 9-13 work trip" "can I afford japan in october" "what's driving my dining spending" "show me the hamburg trip" "mark sao paulo reimbursed 2340"
 
-Create the command interface: natural language parsing with dashboard responses.
+DASHBOARD AS CANVAS
 
-Add projections: forecasting, scenarios, goal tracking.
+The main view is a dashboard showing the most important information. When I ask a question, the dashboard transforms to show the answer. Ask about wealth trajectory, it shows the chart and breakdown. Ask about a trip, it shows trip details. Ask what's unusual, it highlights anomalies.
 
-Polish: alerts, automation, refinements.
+DRILL-DOWN EXPLORATION
+
+Everything should be explorable. Click on net worth change to see what drove it. Click on expenses to see the breakdown. Click on a category to see transactions. Click on a trip to see all associated costs. At any level, understand how it connects to the bigger picture.
+
+INFORMATION DENSITY
+
+Show me real information, not padding. Professional, like a Bloomberg terminal meets modern design. Dense where appropriate, clear always.
+
+PROACTIVE INSIGHTS
+
+Don't wait for me to ask. Surface what matters: Reimbursement overdue Points expiring Unusual spending pattern detected Opportunity identified Goal progress update
+
+TECHNICAL APPROACH
+
+LOCAL FIRST
+
+Everything runs on my MacBook. Data never leaves my machine except for optional external API calls.
+
+DATABASE
+
+SQLite. Single file, no server, portable.
+
+LOCAL LLM
+
+Use Ollama with the latest available Qwen model for most tasks: categorization, command parsing, analysis, onboarding questions. This keeps daily operation completely free.
+
+The model choice should be configurable so I can swap as newer models release.
+
+OPTIONAL EXTERNAL API
+
+For complex reasoning that exceeds local model capability, optionally call an external API. During setup, ask which provider I want: Claude, xAI, OpenAI, or none. Make it configurable and swappable.
+
+Clearly indicate when external API is being used versus local model.
+
+MARKET DATA
+
+For tracking investment and stock values, fetch current prices. This can be from a free API or data source. I'll provide what I own and purchase history. The system tracks current value.
 
 DESIGN PRINCIPLES
 
-Fail gracefully when data is missing or incomplete.
+INSIGHT OVER REPORTING
 
-Explain reasoning so I can verify and trust the outputs.
+Every output must tell me something I couldn't figure out in 30 seconds from my bank app. Don't just show data. Interpret it. Explain what it means. Tell me what to do.
 
-Learn from my corrections to improve over time.
+CONTEXT AWARENESS
 
-Respect privacy with local-first architecture.
+A transaction is not just an amount and merchant. It's connected to a trip, a relationship, a life event, a pattern. Understanding context is what makes the system valuable.
 
-Progressive enhancement where core features work without LLM.
+TRUTH OVER APPEARANCE
 
-CREATIVE DIRECTION
+My bank balance is not my wealth. My expenses are not my true costs. Reimbursements, shared expenses, and timing all affect the real picture. Always show the true picture, not the superficial one.
 
-I have described what I want to achieve. For how to achieve it, use your best judgment.
+TRENDS OVER SNAPSHOTS
 
-Consider innovative approaches to:
-- Making the onboarding feel efficient despite being thorough
-- Visualizing complex financial relationships
-- Detecting patterns I would not notice myself
-- Making projections trustworthy and transparent
-- Reducing friction in daily use
-- Surfacing the right information at the right time
-- Building an intuitive mental model of my finances
-- Handling the complexity of reimbursement timing
-- Comparing trips and predicting costs
-- Optimizing points and loyalty programs
-- Finding money I am leaving on the table
-- Making the command bar feel powerful and intuitive
-- Designing dashboard transitions that feel responsive and logical
-- Storing and querying the knowledge learned during onboarding
-- Maximizing use of local LLM to minimize external API costs
+One expensive month means nothing. A trend means everything. Distinguish between noise and signal. Alert me to trends, explain away anomalies.
 
-Surprise me with elegant solutions. The goal is a system I will actually use daily because it provides genuine value.
+PRIORITIZED RECOMMENDATIONS
+
+Not everything matters equally. Rank insights by impact. Tell me what would actually move the needle versus what's trivial.
+
+PROGRESSIVE DEPTH
+
+Start with the big picture. Allow drilling down to any level of detail. Net worth to drivers to categories to transactions. Always let me go deeper if I want.
+
+FAIL GRACEFULLY
+
+Missing data shouldn't break the system. Incomplete information should degrade quality, not functionality. Be honest about uncertainty.
+
+LEARN AND IMPROVE
+
+My corrections should improve future accuracy. The system gets smarter over time as it learns my patterns and preferences.
+
+WHAT SUCCESS LOOKS LIKE
+
+After using this system for a month, I should:
+
+Know my true net worth and how it's changing Understand what's driving wealth growth or decline Have identified any money leaks or missed opportunities Feel confident answering "can I afford X" for any major decision Spend less time wondering about my finances and more time acting on clear insights Trust the system because it shows its reasoning and lets me verify
+
+The system should feel like a knowledgeable advisor who has studied my entire financial history and gives me personalized, actionable guidance rather than generic reports.
 
 CONSTRAINTS
 
-Must run fully offline except for optional API calls.
-macOS only.
-Single user.
-No cloud infrastructure.
-No recurring costs except optional API usage.
-Pure desktop application. No mobile integration for now.
-Prefer local Qwen model for all tasks. External API only as optional enhancement.
+Must run fully offline except for optional API calls and market data macOS only Single user No cloud infrastructure No recurring costs except optional API usage Pure desktop application
 
-BEGIN
+BUILD APPROACH
 
-Start by understanding the full scope, then create a plan. Build incrementally, starting with the foundation and evolving toward the complete vision.
+Start with foundation: project structure, database, data import Build thorough onboarding: this is critical and should be complete before other features Add wealth tracking: net worth calculation, portfolio tracking, market data Add intelligence: categorization, pattern detection, trend analysis Build the interface: command bar, dashboard, drill-down exploration Add insights: recommendations, leak detection, opportunity identification Polish: alerts, refinements, edge cases
+
+CREATIVE LATITUDE
+
+I've described what I want to achieve. For how to achieve it, use your best judgment.
+
+Consider innovative approaches to:
+
+Visualizing wealth and its drivers
+Making drill-down exploration intuitive
+Detecting patterns and trends
+Surfacing actionable insights
+Making onboarding thorough but not tedious
+Handling the complexity of shared expenses and reimbursements
+Presenting recommendations by impact
+Building trust through transparency
+
+
+The goal is a system I'll actually use daily because it provides genuine clarity and insight into my financial life.
