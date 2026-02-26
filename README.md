@@ -1,288 +1,178 @@
 # Jarvis
 CFO Dashboard and AI Assistant
 
----
-
 PROJECT: Personal Financial Command Center
 
 OVERVIEW
 
-Build a local-first personal financial advisor that runs on macOS. This is NOT a chatbot—it's a persistent financial intelligence system that understands my life context, tracks my money across multiple accounts, and provides proactive insights.
+Build a local-first personal financial advisor that runs on macOS. This is NOT a chatbot. It is a persistent financial intelligence system that understands my life context, tracks my money across multiple accounts, and provides proactive insights.
 
 The system should feel like having a personal CFO who knows everything about my financial situation and life circumstances.
 
 CORE PHILOSOPHY
 
-1. Local-first: Everything runs on my MacBook. Data never leaves my machine except for optional Claude API calls for complex reasoning.
+Local-first: Everything runs on my MacBook. Data never leaves my machine except for optional LLM API calls for complex reasoning.
 
-2. Context-aware: The system understands my life (relationships, work trips, recurring patterns) not just my transactions.
+Context-aware: The system understands my life, not just my transactions. Relationships, work patterns, life phases, future plans.
 
-3. Proactive, not reactive: It surfaces insights and warnings without me asking.
+Proactive: It surfaces insights and warnings without me asking.
 
-4. Minimal friction: Importing data, asking questions, and getting answers should be effortless.
+Minimal friction: Importing data, asking questions, and getting answers should be effortless.
 
-USER PROFILE
+WHO I AM
 
-I have a complex financial situation with work trips paid personally and reimbursed 1-3 months later. I use three accounts: N26 (primary), AMEX (work expenses), Revolut (travel/secondary). I live with my girlfriend who contributes 750 EUR per month to shared expenses. I travel frequently for work (expenses are 100% reimbursable). I have loyalty points across Miles and More, Flying Blue, and Qatar Privilege Club.
+I have a complex financial situation. I travel frequently for work, pay expenses personally, and get reimbursed 1-3 months later. This creates a distorted view of my actual financial position.
+
+I use three accounts: N26 (primary), AMEX (work expenses), Revolut (travel/secondary).
+
+I live with my girlfriend who contributes monthly to shared expenses.
+
+I have loyalty points across multiple airline programs that I want to track.
+
+My financial picture only makes sense when you understand my life context.
+
+WHAT I WANT TO ACHIEVE
+
+TRUE FINANCIAL CLARITY I want to know my real financial position at any moment. Not just account balances, but: What do I actually have? What is owed to me? What do I owe? What is my money situation if I account for pending reimbursements and upcoming obligations?
+
+LIFE-AWARE INTELLIGENCE The system should understand that my rent increased because I moved in with my girlfriend, and that her monthly transfers offset this. It should know that a week of expenses in Buffalo means work trip, not spending spree. It should recognize patterns across my life phases and adjust its understanding accordingly.
+
+WORK TRIP MANAGEMENT I need to tell it "I am in Buffalo March 9-13, everything is work-related" and have it automatically handle categorization, tracking, and reimbursement monitoring for that trip.
+
+FORWARD-LOOKING INSIGHTS I want to ask "Can I afford a trip to Japan in October?" and get an intelligent answer that considers my current position, expected reimbursements, historical patterns, and known upcoming expenses.
+
+PROACTIVE ALERTS It should tell me when something needs attention: overdue reimbursements, expiring loyalty points, unusual spending patterns, missed contributions, upcoming large expenses.
+
+HISTORICAL UNDERSTANDING When I first load my data, it should analyze patterns, detect anomalies, and ask me questions to understand what happened. "Your rent changed significantly in November. What happened?" This builds the life model.
+
+SCENARIO MODELING I want to explore "what if" situations. What if I buy a car in June? What if I take two trips this quarter? How do different decisions affect my trajectory?
 
 DATA SOURCES
 
-Banking (CSV Import):
-- N26: Primary checking, salary deposits, rent, daily expenses
-- AMEX: Primarily work expenses, some personal
-- Revolut: Travel, foreign currency, secondary spending
+Banking via CSV import from N26, AMEX, and Revolut.
 
-Manual Input:
-- Work trips (dates, destination, what counts as work expense)
-- Life events (moved in with girlfriend, job changes, etc.)
-- Future plans (upcoming trips, large purchases)
-- Loyalty point balances
+Manual input for work trips, life events, future plans, and loyalty balances.
 
-TECHNICAL STACK
+Optional browser automation to fetch CSVs automatically.
 
-Required:
-- Python 3.11+ as core language
-- SQLite for local database, single file, no server
-- Streamlit for dashboard UI
-- Pandas for data processing
-- Ollama with Llama 3.1 8B for local LLM categorization (no API costs)
+TECHNICAL FOUNDATION
 
-Optional:
-- Claude API for complex advisory questions (user provides own key)
-- Playwright for browser automation for CSV downloads
+Python as the core language.
 
-HIGH-LEVEL ARCHITECTURE
+SQLite for local database storage. Single file, no server, portable.
 
-The system has five layers:
+Streamlit for the dashboard interface. Or suggest alternatives if something better fits the UI vision described below.
 
-LAYER 1 - PRESENTATION LAYER
-Streamlit Dashboard with these views:
-- Overview (balances, trends, alerts)
-- Transactions (searchable, filterable)
-- Work Trips (manage, track reimbursements)
-- Projections (scenarios, forecasts)
-- Advisor (natural language interface)
+Ollama with a local LLM for categorization and basic intelligence without API costs.
 
-LAYER 2 - INTELLIGENCE LAYER
-Three components working together:
-- Ollama (Local): Categorize transactions, summarize patterns, extract entities
-- Claude (API): Complex Q&A, life advice, sophisticated projections
-- Rule Engine (Python): Pattern detection, anomaly alerts, auto-tagging
+Optional external LLM API for complex reasoning. The system should ask me during setup which provider I want to use (Claude, xAI, OpenAI, or none). This should be configurable and swappable.
 
-LAYER 3 - ANALYSIS LAYER
-Three modules:
-- Balances: True balance calculation, by-account breakdown, pending reimbursements
-- Patterns: Spending trends, seasonal analysis, anomaly detection
-- Projections: Cash flow forecast, scenario modeling, "can I afford X" logic
+DATA MODEL CONCEPTS
 
-LAYER 4 - DATA LAYER
-SQLite Database with these tables:
-- transactions
-- work_trips
-- life_events
-- people
-- recurring
-- loyalty_programs
-- categories
-- projections
-- settings
+The database should capture:
 
-LAYER 5 - INGESTION LAYER
-Three input methods:
-- CSV Parsers: N26, AMEX, Revolut
-- Manual Input: Trips, events, goals
-- Browser Automation (optional): Auto-download CSVs via Playwright
+Transactions from all accounts with deduplication, categorization, and links to trips/people/events.
 
-DATABASE SCHEMA
+Work trips with dates, destinations, expense tracking, and reimbursement status.
 
-Design a normalized SQLite schema with these core entities:
+Life events that explain financial pattern changes.
 
-TRANSACTIONS TABLE
-Core financial data from all accounts. Must handle deduplication across imports. Links to work_trips, people, categories. Tracks reimbursement status for work expenses.
+People with financial relationships (partner contributions, expense splitting).
 
-WORK_TRIPS TABLE
-Destination, dates, classification rules. Auto-tags transactions within date/location range. Tracks reimbursement lifecycle (submitted, pending, received).
+Recurring transactions like subscriptions with expected amounts and change detection.
 
-LIFE_EVENTS TABLE
-Major life changes that affect financial patterns. Examples: moved in with girlfriend, started new job, trip to Paris. Used to explain pattern changes and segment historical analysis.
+Loyalty programs with balances and expiry tracking.
 
-PEOPLE TABLE
-Relationships with financial implications. Partner contributions, expense splitting patterns. Employer info for reimbursement tracking.
+Design the schema to support the features described. Normalize appropriately but prioritize query simplicity for common operations.
 
-RECURRING TABLE
-Subscriptions and regular payments. Expected amounts, frequency, category. Alerts when amounts change unexpectedly.
+INTELLIGENCE APPROACH
 
-LOYALTY_PROGRAMS TABLE
-Points balances across programs. Expiry tracking and alerts.
+Use a tiered approach:
 
-CATEGORIES TABLE
-Hierarchical spending categories. User-customizable. Mapping rules (merchant patterns to category).
+Simple rules for known patterns (fast, no LLM needed).
 
-KEY FEATURES
+Local LLM for categorization and basic analysis (free, private).
 
-FEATURE 1: TRUE BALANCE CALCULATION
-Not just sum of accounts, but:
-- Current account balances
-- Minus upcoming bills (credit card due dates)
-- Plus pending reimbursements (with confidence based on age)
-- Minus committed future expenses
+External LLM API for complex questions and sophisticated reasoning (optional, user-configured).
 
-FEATURE 2: WORK TRIP MANAGEMENT
-User says: "I'll be in Buffalo March 9-13, all expenses work-related"
-System responds by:
-- Creating work_trip record
-- Auto-tagging any transaction in Buffalo during those dates
-- Tracking running total
-- Monitoring reimbursement status
-- Alerting if reimbursement is overdue
+The system should work fully offline with degraded but functional capability. External API enhances but is not required.
 
-FEATURE 3: LIFE CONTEXT AWARENESS
-The system understands:
-- Partner contributions offset housing costs
-- Work trips create temporary expense spikes that net to zero
-- Seasonal patterns (holiday spending, summer travel)
-- Life phases (pre/post moving in together)
+USER INTERFACE VISION
 
-FEATURE 4: SMART CATEGORIZATION
-Three-tier approach:
-- Tier 1 Rules: Known merchants map to known categories (fast, no LLM)
-- Tier 2 Local LLM: Unknown transactions categorized by Ollama (free, private)
-- Tier 3 Learning: User corrections improve future categorization
+This is critical. The interface must NOT feel like a chat application.
 
-FEATURE 5: PROACTIVE INSIGHTS
-Dashboard surfaces alerts without being asked:
-- "Reimbursement from Sao Paulo trip is 47 days old (avg is 35)"
-- "12,400 Flying Blue miles expire June 30"
-- "Spending 40% above average this month—driven by work trip"
-- "Girlfriend's contribution not received yet this month"
+COMMAND BAR PARADIGM Think Spotlight, Raycast, or a terminal. A single input field where I type commands or questions. The system responds by updating the dashboard, not by adding messages to a conversation thread.
 
-FEATURE 6: SCENARIO ENGINE
-Model future financial states:
-- User asks: "Can I afford a 3,000 EUR trip in April?"
-- System considers: current balance, pending reimbursements, projected income, historical spending patterns, known upcoming expenses
-- Returns confidence-weighted answer with reasoning
+Examples of inputs: "buffalo march 9-13 work trip" "can I afford japan in october" "show spending last 3 months" "mark sao paulo reimbursed 2340" "why is february spending so high"
 
-FEATURE 7: HISTORICAL ONBOARDING
-First-run experience:
-- Import all historical CSVs
-- System detects patterns and anomalies
-- Asks clarifying questions: "Your rent changed in November. What happened?"
-- Builds life model from answers
+The response appears as dashboard content: cards, tables, charts, summaries. Not as a chat bubble. The input field clears after each command. There is no conversation history visible. Each interaction is atomic.
 
-DASHBOARD PAGES
+DASHBOARD AS CANVAS The main view is a dashboard that updates based on context and commands. Default state shows the most important information: true balance, alerts, recent activity, upcoming concerns.
 
-PAGE 1 - OVERVIEW
-- True balance (prominent)
-- Account breakdown
-- Pending reimbursements
-- This month's spending (personal only)
-- Active alerts/insights
-- Quick actions
+When I ask a question, the dashboard transforms to show the answer. Ask about spending trends, it shows charts. Ask about a trip, it shows trip details. Ask if I can afford something, it shows a projection breakdown.
 
-PAGE 2 - TRANSACTIONS
-- Searchable, filterable table
-- Bulk categorization
-- Work expense tagging
-- Split transaction support
+INFORMATION ARCHITECTURE Primary: True balance, alerts requiring attention, critical metrics. Secondary: Account breakdown, pending reimbursements, monthly summary. On-demand: Transaction lists, trip details, historical analysis, projections.
 
-PAGE 3 - WORK TRIPS
-- List of trips with status
-- Create new trip (date range, destination, rules)
-- Reimbursement tracking
-- Historical analysis (avg reimbursement time)
+The interface should be information-dense but not cluttered. Professional, like a Bloomberg terminal meets a modern design system.
 
-PAGE 4 - PROJECTIONS
-- Cash flow forecast (30/60/90 days)
-- Scenario modeling
-- "What if" simulations
-- Goal tracking
+INTERACTION PATTERNS Command bar is always accessible, perhaps with a keyboard shortcut. Dashboard sections are clickable for drill-down. Quick actions available for common tasks: add trip, import CSV, mark reimbursed. Settings accessible but not prominent.
 
-PAGE 5 - ADVISOR
-- Natural language interface
-- Full context awareness
-- Cites sources for answers
-- Can execute actions ("mark trip as reimbursed")
+NO CHAT ELEMENTS No message bubbles. No conversation threads. No "AI is typing" indicators. No back-and-forth visible history. The system is an instrument I operate, not an entity I converse with.
 
-PAGE 6 - SETTINGS
-- Account configuration
-- Category management
-- People/relationships
-- API keys
-- Import/export
+IMPLEMENTATION APPROACH
 
-IMPLEMENTATION PHASES
+Start with the foundation: project structure, database, CSV importers, basic dashboard.
 
-PHASE 1 - FOUNDATION
-- Project structure and database schema
-- CSV importers for all three banks
-- Basic Streamlit dashboard showing transactions
-- Manual categorization
+Add intelligence: categorization, work trip logic, pattern detection.
 
-PHASE 2 - INTELLIGENCE
-- Ollama integration for auto-categorization
-- Work trip system (create, auto-tag, track)
-- True balance calculation
-- Basic pattern detection
+Build the life model: relationships, events, historical onboarding.
 
-PHASE 3 - LIFE MODEL
-- People/relationships tracking
-- Life events system
-- Partner contribution handling
-- Historical onboarding flow
+Create the command interface: natural language parsing with dashboard responses.
 
-PHASE 4 - ADVISOR
-- Claude API integration
-- Context builder (summarizes financial state for LLM)
-- Natural language queries
-- Actionable responses
+Add projections: forecasting, scenarios, goal tracking.
 
-PHASE 5 - PROJECTIONS
-- Cash flow forecasting
-- Scenario engine
-- "Can I afford X?" logic
-- Monte Carlo-style confidence ranges
-
-PHASE 6 - POLISH
-- Proactive alerts system
-- Browser automation for CSV downloads
-- Mobile access (Telegram bot or iOS Shortcut)
-- Backup/restore functionality
+Polish: alerts, automation, refinements.
 
 DESIGN PRINCIPLES
 
-1. Fail gracefully: Missing data should not break the system
-2. Explain reasoning: Show how calculations are derived
-3. Respect privacy: All data local, API calls optional and explicit
-4. Progressive enhancement: Core features work without LLM, LLM makes them better
-5. User corrections improve the system: Learning from manual overrides
+Fail gracefully when data is missing or incomplete.
 
-CREATIVE LATITUDE
+Explain reasoning so I can verify and trust the outputs.
 
-Feel free to enhance or extend these ideas:
-- Better visualization approaches
-- Smarter pattern detection algorithms
-- More sophisticated projection models
-- Elegant onboarding experiences
-- Useful integrations I have not thought of
-- UX improvements that reduce friction
-- Novel ways to surface insights
+Learn from my corrections to improve over time.
 
-The goal is a system I will actually use daily because it provides genuine value and feels effortless.
+Respect privacy with local-first architecture.
+
+Progressive enhancement where core features work without LLM.
+
+CREATIVE DIRECTION
+
+I have described what I want to achieve. For how to achieve it, use your best judgment.
+
+Consider innovative approaches to:
+
+Visualizing complex financial relationships
+Detecting patterns I would not notice myself
+Making projections trustworthy and transparent
+Reducing friction in daily use
+Surfacing the right information at the right time
+Building an intuitive mental model of my finances
+Handling the complexity of reimbursement timing
+Comparing trips and predicting costs
+Optimizing points and loyalty programs
+Finding money I am leaving on the table
+Making the command bar feel powerful and intuitive
+Designing dashboard transitions that feel responsive and logical
+Surprise me with elegant solutions. The goal is a system I will actually use daily because it provides genuine value.
 
 CONSTRAINTS
 
-- Must run fully offline (except optional Claude API)
-- macOS only is fine
-- Single user (me)
-- No cloud infrastructure
-- No recurring costs except optional API usage
+Must run fully offline except for optional API calls. macOS only. Single user. No cloud infrastructure. No recurring costs except optional API usage. Pure desktop application. No mobile integration for now.
 
-FIRST STEPS
+BEGIN
 
-Start by:
-1. Setting up the project structure
-2. Defining the complete database schema
-3. Building the CSV importers
-4. Creating a minimal dashboard that displays imported transactions
+Start by understanding the full scope, then create a plan. Build incrementally, starting with the foundation and evolving toward the complete vision.
 
-Then iterate from there.
+
+
+
