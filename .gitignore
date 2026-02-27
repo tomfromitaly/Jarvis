@@ -26,6 +26,7 @@ app.html
 Data/balances.json
 
 # Environment
+.env
 *.env.local
 
 # IDE
