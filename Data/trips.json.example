@@ -1,0 +1,39 @@
+[
+  {
+    "id": "trip_BKK_202506",
+    "name": "Thailand (Bangkok/Pattaya)",
+    "start": "2025-06-26",
+    "end": "2025-07-10",
+    "type": "WORK",
+    "reimbursement_status": "REIMBURSED",
+    "reimbursed_amount": 4875.95,
+    "reimbursed_date": "2025-12-23",
+    "work_charges": "FLAGGED_ONLY",
+    "flagged_partner_patterns": ["HILTON PATTAYA", "AVISBUDGET"],
+    "personal_during_trip": ["ZARA", "HYROX", "KING POWER"]
+  },
+  {
+    "id": "trip_BER_202509_2",
+    "name": "China",
+    "start": "2025-10-04",
+    "end": "2025-10-12",
+    "type": "PERSONAL",
+    "reimbursement_status": "N/A"
+  },
+  {
+    "id": "trip_BER_202510",
+    "name": "Mexico",
+    "start": "2025-10-27",
+    "end": "2025-11-01",
+    "type": "PERSONAL",
+    "reimbursement_status": "N/A"
+  },
+  {
+    "id": "trip_BER_202601_2",
+    "name": "Rome",
+    "start": "2026-01-23",
+    "end": "2026-01-25",
+    "type": "PERSONAL",
+    "reimbursement_status": "N/A"
+  }
+]

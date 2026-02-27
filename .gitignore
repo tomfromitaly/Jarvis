@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+backend/.venv/
+*.egg-info/
+dist/
+build/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Logs (start.sh background processes)
+logs/
+
+# Data
+data/jarvis.db
+data/processed/*
+!data/processed/.gitkeep
+
+# Personal CFO generated
+financial_data.json
+app.html
+# Optional: user balances (copy from Data/balances.json.example)
+Data/balances.json
+
+# Environment
+*.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

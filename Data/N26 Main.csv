@@ -1,0 +1,760 @@
+"Booking Date","Value Date","Partner Name","Partner Iban",Type,"Payment Reference","Account Name","Amount (EUR)","Original Amount","Original Currency","Exchange Rate"
+2025-02-01,2025-01-31,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-02-01,2025-01-31,"Amazon.de*6S5QX30J5",,Presentment,,"Main Account",-19.78,19.78,EUR,1
+2025-02-01,2025-02-01,"DSB Kastrup AUT",,Presentment,,"Main Account",-8.04,60,DKK,0.134
+2025-02-01,2025-02-01,"TESLA CANTINE",,Presentment,,"Main Account",-5.6,5.6,EUR,1
+2025-02-01,2025-02-01,"Backwerk 337",,Presentment,,"Main Account",-10.65,10.65,EUR,1
+2025-02-02,2025-02-01,"Mol*WeWash GmbH",,Presentment,,"Main Account",-9,9,EUR,1
+2025-02-02,2025-02-01,"Espresso House 7162",,Presentment,,"Main Account",-19.43,145,DKK,0.134
+2025-02-02,2025-02-02,"DET KGL. BIBLIO",,Presentment,,"Main Account",-2.68,20,DKK,0.134
+2025-02-03,2025-02-03,"SP LA CABRA MONTERGADE",,Presentment,,"Main Account",-8.04,60,DKK,0.134
+2025-02-03,2025-02-03,"JOE  THE JUICE A/S",,Presentment,,"Main Account",-4.02,30,DKK,0.134
+2025-02-03,2025-02-03,PORNSAK,,Presentment,,"Main Account",-77.6,579,DKK,0.1340241796
+2025-02-03,2025-02-03,"LEES KITCHEN",,Presentment,,"Main Account",-47.45,354,DKK,0.134039548
+2025-02-03,2025-02-03,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 65e6063a-347f-4ac3-81ca-94d3abbce567","Main Account",-350.00,,,
+2025-02-03,2025-02-03,"SMART LIVING OBJEKT GUERTEL",DE30701205000200134788,"Direct Debit","-708,00 GRUNDMIETE 02/25 / -185,00 BK-PAUSCHALE 02/2 /","Main Account",-893.00,,,
+2025-02-03,2025-02-03,"PAYPAL *URBANSPORTS",,Presentment,,"Main Account",-9.9,9.9,EUR,1
+2025-02-04,2025-02-03,"REWE Markt GmbH-Zw",,Presentment,,"Main Account",-7.51,7.51,EUR,1
+2025-02-04,2025-02-04,Feather,IE30CITI99005132956548,"Direct Debit","Feather - Insurance","Main Account",-6.44,,,
+2025-02-05,2025-02-04,"EDEKA Thaut",,Presentment,,"Main Account",-12.77,12.77,EUR,1
+2025-02-05,2025-02-04,"TESLA CANTINE",,Presentment,,"Main Account",-6,6,EUR,1
+2025-02-05,2025-02-05,"PAYPAL *MICROSOFT",,Presentment,,"Main Account",-2,2,EUR,1
+2025-02-05,2025-02-05,"Tommaso Batacchi",LT473250043398366091,"Debit Transfer","Sent from N26","Main Account",-350.00,,,
+2025-02-05,2025-02-05,"Mortgage Savings",,"Credit Transfer",,"Main Account",350,,,
+2025-02-06,2025-02-05,"TESLA CANTINE",,Presentment,,"Main Account",-6,6,EUR,1
+2025-02-07,2025-02-06,"luca Traiteur",,Presentment,,"Main Account",-9.1,9.1,EUR,1
+2025-02-07,2025-02-06,"MCDONALDS 01723",,Presentment,,"Main Account",-10.17,10.17,EUR,1
+2025-02-07,2025-02-06,"TESLA CANTINE",,Presentment,,"Main Account",-6,6,EUR,1
+2025-02-07,2025-02-07,"Busverkehr Oder-Spree GmbH",DE61100100100152818104,"Direct Debit","ABRECHNUNG A43356 02/2025","Main Account",-30.10,,,
+2025-02-07,2025-02-07,"UBER* TRIP",,Presentment,,"Main Account",-13.91,82.94,BRL,0.1677115987
+2025-02-10,2025-02-10,"Mortgage Savings",,"Credit Transfer",,"Main Account",500,,,
+2025-02-10,2025-02-10,"Tommaso Batacchi",LT473250043398366091,"Debit Transfer","Sent from N26","Main Account",-500.00,,,
+2025-02-10,2025-02-10,"TERRA VISTA",,Presentment,,"Main Account",-7.77,46,BRL,0.1689130435
+2025-02-11,2025-02-11,"UBER* TRIP",,Presentment,,"Main Account",-13.93,82.43,BRL,0.1689918719
+2025-02-11,2025-02-11,"AMZN Mktp DE*TK0SC3RA4",,Presentment,,"Main Account",-25.97,25.97,EUR,1
+2025-02-11,2025-02-11,"RYANAIR  FKB0",,Presentment,,"Main Account",-227.54,227.54,EUR,1
+2025-02-16,2025-02-16,"Mortgage Savings",,"Credit Transfer",,"Main Account",250,,,
+2025-02-16,2025-02-16,"Tommaso Batacchi",LT473250043398366091,"Debit Transfer","Sent from N26","Main Account",-250.00,,,
+2025-02-17,2025-02-17,,,"Credit Transfer","Refund N26 Smart Membership","Main Account",37.33,,,
+2025-02-18,2025-02-18,"PALAPHITA EEDEN BAR E",,Presentment,,"Main Account",-10.39,61.92,BRL,0.1677971576
+2025-02-19,2025-02-19,"MAISON PRADIER",,Presentment,,"Main Account",-9.95,9.95,EUR,1
+2025-02-20,2025-02-20,"EDEKA Thaut",,Presentment,,"Main Account",-22.07,22.07,EUR,1
+2025-02-20,2025-02-20,"TESLA CANTINE",,Presentment,,"Main Account",-7.1,7.1,EUR,1
+2025-02-21,2025-02-21,"Tommaso Batacchi",LT473250043398366091,"Debit Transfer","Sent from N26","Main Account",-25.00,,,
+2025-02-21,2025-02-21,"ALBRIZIO EDOARDO","IT62K0803558242000300379603","Credit Transfer","Spese Brasile","Main Account",139.95,,,
+2025-02-22,2025-02-21,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-02-23,2025-02-22,"TESLA CANTINE",,Presentment,,"Main Account",-6,6,EUR,1
+2025-02-23,2025-02-23,"Stephanie Furreta Bento",DE43100101788921740370,"Debit Transfer","Mallorca payback","Main Account",-40.00,,,
+2025-02-24,2025-02-23,"EDEKA Thaut",,Presentment,,"Main Account",-41.27,41.27,EUR,1
+2025-02-24,2025-02-23,"FRIEDRICH APOTHEKE",,Presentment,,"Main Account",-23.9,23.9,EUR,1
+2025-02-24,2025-02-23,"EDEKA Thaut",,Presentment,,"Main Account",-25.05,25.05,EUR,1
+2025-02-24,2025-02-24,"PAYPAL *MILES",,Presentment,,"Main Account",-3.97,3.97,EUR,1
+2025-02-25,2025-02-25,"Tesla Manufa. Brandenburg - Payroll",DE10502109000218622844,"Credit Transfer","Salary 022025","Main Account",3723.29,,,
+2025-02-25,2025-02-25,"Mortgage Savings",,"Debit Transfer","Income Sorter","Main Account",-1650.00,,,
+2025-02-25,2025-02-25,"Hr H Ourabi via ING Betaalverzoek",NL10INGB0005300114,"Debit Transfer","NL91INGB0626618576 7051675786195077 TICKETMASTER NETHERLAN DEN HAAG NLD NL91INGB0626618576","Main Account",-134.40,,,
+2025-02-25,2025-02-25,"Pianocafe Am Lietzense",,Presentment,,"Main Account",-15.7,15.7,EUR,1
+2025-02-25,2025-02-25,"Penny Bahnhof Lich",,Presentment,,"Main Account",-2.79,2.79,EUR,1
+2025-02-26,2025-02-25,"easyJet  K92BZ74",,Presentment,,"Main Account",-147.91,147.91,EUR,1
+2025-02-26,2025-02-26,"PAYPAL *MICROSOFT",,Presentment,,"Main Account",-13.99,13.99,EUR,1
+2025-02-26,2025-02-26,LENSTORE,,Presentment,,"Main Account",-49.97,49.97,EUR,1
+2025-02-27,2025-02-26,"TESLA CANTINE",,Presentment,,"Main Account",-6,6,EUR,1
+2025-02-27,2025-02-26,"EDEKA Thaut",,Presentment,,"Main Account",-17.53,17.53,EUR,1
+2025-02-27,2025-02-27,"Zabka NANO",,Presentment,,"Main Account",-0.79,0.79,EUR,1
+2025-02-27,2025-02-27,"PAYPAL *ITUNESAPPST AP",,Presentment,,"Main Account",-2.99,2.99,EUR,1
+2025-02-27,2025-02-27,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-02-27,2025-02-27,"MCDONALDS 01723",,Presentment,,"Main Account",-8.98,8.98,EUR,1
+2025-02-28,2025-02-28,"Zabka NANO",,Presentment,,"Main Account",-0.79,0.79,EUR,1
+2025-03-01,2025-02-28,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-03-02,2025-03-01,"TESLA CANTINE",,Presentment,,"Main Account",-6,6,EUR,1
+2025-03-02,2025-03-02,"Partnope 081",,Presentment,,"Main Account",-25.1,25.1,EUR,1
+2025-03-02,2025-03-02,"ESM Berlin",,Presentment,,"Main Account",-20.4,20.4,EUR,1
+2025-03-03,2025-03-02,"EDEKA Thaut",,Presentment,,"Main Account",-40.72,40.72,EUR,1
+2025-03-03,2025-03-02,"H&M DE0149",,Presentment,,"Main Account",-14.99,14.99,EUR,1
+2025-03-03,2025-03-02,"ENOTECA SORSI E MORSI",,Presentment,,"Main Account",-13,13,EUR,1
+2025-03-03,2025-03-03,"PAYPAL *URBANSPORTS",,Presentment,,"Main Account",-9.9,9.9,EUR,1
+2025-03-03,2025-03-03,Isla,,Presentment,,"Main Account",-16,16,EUR,1
+2025-03-03,2025-03-03,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 6b958d50-7c6b-4ce7-b8df-4ecadd243809","Main Account",-350.00,,,
+2025-03-03,2025-03-03,"SMART LIVING OBJEKT GUERTEL",DE30701205000200134788,"Direct Debit","-708,00 GRUNDMIETE 03/25 / -185,00 BK-PAUSCHALE 03/2 /","Main Account",-893.00,,,
+2025-03-04,2025-03-03,LUFTHAN2202221685656,,Presentment,,"Main Account",-227.12,227.12,EUR,1
+2025-03-04,2025-03-04,"Mortgage Savings",,"Credit Transfer",,"Main Account",300,,,
+2025-03-04,2025-03-04,Feather,IE30CITI99005132956548,"Direct Debit","Feather - Insurance","Main Account",-6.44,,,
+2025-03-05,2025-03-04,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-03-05,2025-03-04,"EDEKA Thaut",,Presentment,,"Main Account",-18.84,18.84,EUR,1
+2025-03-05,2025-03-04,"TESLA CANTINE",,Presentment,,"Main Account",-2,2,EUR,1
+2025-03-05,2025-03-05,"PAYPAL *WEWASH GMBH",,Presentment,,"Main Account",-8.5,8.5,EUR,1
+2025-03-06,2025-03-05,"EDEKA Thaut",,Presentment,,"Main Account",-13.5,13.5,EUR,1
+2025-03-06,2025-03-06,"PAYPAL *MICROSOFT",,Presentment,,"Main Account",-2,2,EUR,1
+2025-03-06,2025-03-06,"Busverkehr Oder-Spree GmbH",DE61100100100152818104,"Direct Debit","ABRECHNUNG A43356 03/2025","Main Account",-30.10,,,
+2025-03-07,2025-03-06,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-03-07,2025-03-06,"TESLA CANTINE",,Presentment,,"Main Account",-4,4,EUR,1
+2025-03-07,2025-03-07,"PAYPAL *ONSALESIT",,Presentment,,"Main Account",-32.66,32.66,EUR,1
+2025-03-07,2025-03-07,"TESLA CANTINE",,Presentment,,"Main Account",-6,6,EUR,1
+2025-03-09,2025-03-08,"TESLA CANTINE",,Presentment,,"Main Account",-4.5,4.5,EUR,1
+2025-03-10,2025-03-10,"Safe - Espresso Bar Na",,Presentment,,"Main Account",-11.7,11.7,EUR,1
+2025-03-12,2025-03-11,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-03-12,2025-03-11,"MCDONALDS 01723",,Presentment,,"Main Account",-8.98,8.98,EUR,1
+2025-03-12,2025-03-12,"Zabka NANO",,Presentment,,"Main Account",-1.74,1.74,EUR,1
+2025-03-12,2025-03-12,"PAYPAL *WEWASH GMBH",,Presentment,,"Main Account",-3,3,EUR,1
+2025-03-12,2025-03-12,Feather,IE30CITI99005132956548,"Direct Debit","Feather - Insurance","Main Account",-13.50,,,
+2025-03-13,2025-03-12,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-03-14,2025-03-13,"TESLA CANTINE",,Presentment,,"Main Account",-7.1,7.1,EUR,1
+2025-03-15,2025-03-14,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-03-15,2025-03-14,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-03-15,2025-03-14,"TESLA CANTINE",,Presentment,,"Main Account",-6,6,EUR,1
+2025-03-15,2025-03-15,"Mortgage Savings",,"Credit Transfer",,"Main Account",200,,,
+2025-03-16,2025-03-15,"TESLA CANTINE",,Presentment,,"Main Account",-6,6,EUR,1
+2025-03-16,2025-03-16,"Tommaso Batacchi",LT473250043398366091,"Debit Transfer","Sent from N26","Main Account",-29.00,,,
+2025-03-16,2025-03-16,"AGON Sportpark GmbH",,Presentment,,"Main Account",-26.5,26.5,EUR,1
+2025-03-17,2025-03-17,N26,,Reward,"Your friend has joined N26! Enjoy your reward.","Main Account",50,,,
+2025-03-19,2025-03-18,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-03-20,2025-03-19,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-03-21,2025-03-21,"Tommaso Batacchi",LT473250043398366091,"Debit Transfer","Sent from N26","Main Account",-100.00,,,
+2025-03-21,2025-03-21,"Mortgage Savings",,"Credit Transfer",,"Main Account",100.00,,,
+2025-03-22,2025-03-21,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-03-22,2025-03-22,"Zabka NANO",,Presentment,,"Main Account",-1.09,1.09,EUR,1
+2025-03-23,2025-03-22,Fatoush,,Presentment,,"Main Account",-39.64,39.64,EUR,1
+2025-03-23,2025-03-22,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-03-23,2025-03-23,Mundis,,Presentment,,"Main Account",-7.5,7.5,EUR,1
+2025-03-23,2025-03-23,"Mortgage Savings",,"Credit Transfer",,"Main Account",50.00,,,
+2025-03-24,2025-03-23,Hangmee,,Presentment,,"Main Account",-22,22,EUR,1
+2025-03-24,2025-03-24,"Dean & David",,Presentment,,"Main Account",-10.85,10.85,EUR,1
+2025-03-24,2025-03-24,"BURGER JAM",,Presentment,,"Main Account",-13.8,13.8,EUR,1
+2025-03-24,2025-03-24,Kulturforum,,Presentment,,"Main Account",-16,16,EUR,1
+2025-03-25,2025-03-25,"Tesla Manufa. Brandenburg - Payroll",DE10502109000218622844,"Credit Transfer","Salary 032025","Main Account",3629.38,,,
+2025-03-25,2025-03-25,"Mortgage Savings",,"Debit Transfer","Income sorter moved 45%","Main Account",-1633.22,,,
+2025-03-25,2025-03-25,APPLE.COM/BILL,,Presentment,,"Main Account",-2.99,2.99,EUR,1
+2025-03-26,2025-03-25,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-03-26,2025-03-25,"MCDONALDS 01723",,Presentment,,"Main Account",-3.79,3.79,EUR,1
+2025-03-27,2025-03-26,"FADE CLUB Cutbusser I",,Presentment,,"Main Account",-19,19,EUR,1
+2025-03-27,2025-03-26,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-03-27,2025-03-27,"Finanzamt Charlottenburg i.A.d. Berliner Finanzamter",DE22100500006600046013,"Credit Transfer","ERSTATT.014/034/05539 EST-VERANL. 24","Main Account",621.00,,,
+2025-03-27,2025-03-27,"Mortgage Savings",,"Debit Transfer",,"Main Account",-620.00,,,
+2025-03-28,2025-03-27,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-03-28,2025-03-27,"Amazon.de*RZ5932AR4",,Presentment,,"Main Account",-11,11,EUR,1
+2025-03-29,2025-03-28,"TESLA CANTINE",,Presentment,,"Main Account",-8,8,EUR,1
+2025-04-01,2025-04-01,"SMART LIVING OBJEKT GUERTEL",DE30701205000200134788,"Direct Debit","-708,00 GRUNDMIETE 04/25 / -185,00 BK-PAUSCHALE 04/2 /","Main Account",-893.00,,,
+2025-04-01,2025-04-01,"Rundfunk ARD, ZDF, DRadio",DE85500500000000234567,"Direct Debit","Rundfunk 04.2025 - 06.2025 Beitragsnr. 161786743 Aenderungen ganz bequem: www.rundfunkbeitrag.de","Main Account",-55.08,,,
+2025-04-02,2025-04-01,"TESLA CANTINE",,Presentment,,"Main Account",-5.4,5.4,EUR,1
+2025-04-02,2025-04-02,Feather,IE30CITI99005132956548,"Direct Debit","Feather - Insurance","Main Account",-4.94,,,
+2025-04-03,2025-04-02,"TESLA CANTINE",,Presentment,,"Main Account",-5.4,5.4,EUR,1
+2025-04-03,2025-04-03,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: cb73b6f1-2ee6-4337-9fa1-e000544eee77","Main Account",-350.00,,,
+2025-04-03,2025-04-03,"AMERICAN EXPRESS EUROPE S.A. (Germany branch)",DE05500700100095599700,"Direct Debit",3750-799922-21003,"Main Account",-262.90,,,
+2025-04-04,2025-04-03,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-04-04,2025-04-04,"Metropolitan Pharmacy",,Presentment,,"Main Account",-37.4,37.4,EUR,1
+2025-04-04,2025-04-04,"TAXI 217 PALMA",,Presentment,,"Main Account",-43.5,43.5,EUR,1
+2025-04-04,2025-04-04,"Busverkehr Oder-Spree GmbH",DE61100100100152818104,"Direct Debit","ABRECHNUNG A43356 04/2025","Main Account",-30.10,,,
+2025-04-05,2025-04-04,"AREAS - AEROPUERTO PAL",,Presentment,,"Main Account",-1.5,1.5,EUR,1
+2025-04-05,2025-04-04,"AREAS - AEROPUERTO PAL",,Presentment,,"Main Account",-1.5,1.5,EUR,1
+2025-04-05,2025-04-04,"AREAS - AEROPUERTO PAL",,Presentment,,"Main Account",-1.5,1.5,EUR,1
+2025-04-05,2025-04-05,"CATEDRAL DE MALLORCA",,Presentment,,"Main Account",-20,20,EUR,1
+2025-04-05,2025-04-05,GELACIOUS,,Presentment,,"Main Account",-28.6,28.6,EUR,1
+2025-04-05,2025-04-05,"CAN JAUME ARTESANS",,Presentment,,"Main Account",-29,29,EUR,1
+2025-04-05,2025-04-05,"ESTANC PALMANOVA 3",,Presentment,,"Main Account",-16.8,16.8,EUR,1
+2025-04-05,2025-04-05,"ESTANC PALMANOVA 3",,Presentment,,"Main Account",-1.2,1.2,EUR,1
+2025-04-05,2025-04-05,"IL TANO",,Presentment,,"Main Account",-47,47,EUR,1
+2025-04-05,2025-04-05,"EL CHIRINGO KIOSCO",,Presentment,,"Main Account",-8,8,EUR,1
+2025-04-06,2025-04-06,"8094 CC LA VILA",,Presentment,,"Main Account",-1.1,1.1,EUR,1
+2025-04-06,2025-04-06,"TIB BUS TREN METRO",,Presentment,,"Main Account",-2.7,2.7,EUR,1
+2025-04-06,2025-04-06,"ZEL MALLORCA",,Presentment,,"Main Account",-19.8,19.8,EUR,1
+2025-04-06,2025-04-06,"HELADERIA FRESH",,Presentment,,"Main Account",-8,8,EUR,1
+2025-04-07,2025-04-07,"DIANA BEACH CLUB",,Presentment,,"Main Account",-29.85,29.85,EUR,1
+2025-04-07,2025-04-07,"TSC SUPERMARKET",,Presentment,,"Main Account",-7.45,7.45,EUR,1
+2025-04-08,2025-04-08,"TIB BUS TREN METRO",,Presentment,,"Main Account",-4.05,4.05,EUR,1
+2025-04-08,2025-04-08,"BATACCHI TOMMASO","IT15Z0303202801010000011161","Credit Transfer","Savings part 1","Main Account",750.00,,,
+2025-04-08,2025-04-08,"Mortgage Savings",,"Debit Transfer",,"Main Account",-750.00,,,
+2025-04-08,2025-04-08,"BATACCHI TOMMASO","IT15Z0303202801010000011161","Credit Transfer","Savings Part 2","Main Account",500.00,,,
+2025-04-08,2025-04-08,"Mortgage Savings",,"Debit Transfer",,"Main Account",-500.00,,,
+2025-04-09,2025-04-08,"TESLA CANTINE",,Presentment,,"Main Account",-5.4,5.4,EUR,1
+2025-04-09,2025-04-09,"Mortgage Savings",,"Credit Transfer",,"Main Account",1250.00,,,
+2025-04-09,2025-04-09,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: d4f50594-ac1b-4a8f-a2e4-635069bb48c7","Main Account",-1250.00,,,
+2025-04-09,2025-04-09,"BATACCHI TOMMASO","IT15Z0303202801010000011161","Credit Transfer","Savings Part III","Main Account",750.00,,,
+2025-04-09,2025-04-09,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: cdb188bc-d1f2-4e6c-bd4b-3b97f3969c5d","Main Account",-750.00,,,
+2025-04-09,2025-04-09,"BATACCHI TOMMASO","IT15Z0303202801010000011161","Credit Transfer","Savings Part IV","Main Account",750.00,,,
+2025-04-09,2025-04-09,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 0428ef7e-54a7-4936-abcc-8fc32cbb531a","Main Account",-750.00,,,
+2025-04-09,2025-04-09,"BATACCHI TOMMASO","IT15Z0303202801010000011161","Credit Transfer","Savings Part V","Main Account",750.00,,,
+2025-04-09,2025-04-09,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 9cd57e21-ed50-446d-9c3e-f6d51744a4c2","Main Account",-750.00,,,
+2025-04-09,2025-04-09,"BATACCHI TOMMASO","IT15Z0303202801010000011161","Credit Transfer","Savings Part VI","Main Account",500.00,,,
+2025-04-09,2025-04-09,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 7555a8fd-8a5c-467f-a5fe-572b24ea7b8e","Main Account",-500.00,,,
+2025-04-10,2025-04-09,"TESLA CANTINE",,Presentment,,"Main Account",-4.5,4.5,EUR,1
+2025-04-10,2025-04-10,"Home Bar",,Presentment,,"Main Account",-12,12,EUR,1
+2025-04-10,2025-04-10,"BATACCHI TOMMASO","IT15Z0303202801010000011161","Credit Transfer","Savings Moving","Main Account",950.00,,,
+2025-04-10,2025-04-10,"BATACCHI TOMMASO","IT15Z0303202801010000011161","Credit Transfer",Sabings,"Main Account",999.00,,,
+2025-04-10,2025-04-10,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 32374e07-ddd3-44b5-af68-3737f8130eba","Main Account",-1949.00,,,
+2025-04-11,2025-04-10,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-04-11,2025-04-11,"BATACCHI TOMMASO","IT15Z0303202801010000011161","Credit Transfer",Savinga,"Main Account",999.00,,,
+2025-04-11,2025-04-11,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 87475fb6-5aec-43a0-b192-5103bb3f4075","Main Account",-1000.00,,,
+2025-04-11,2025-04-11,"BATACCHI TOMMASO","IT15Z0303202801010000011161","Credit Transfer",Savings,"Main Account",999.00,,,
+2025-04-11,2025-04-11,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 1cf3d3aa-9363-4669-9b8a-5a3b62b1727c","Main Account",-999.00,,,
+2025-04-11,2025-04-11,"BATACCHI TOMMASO","IT15Z0303202801010000011161","Credit Transfer","Savings moving from Italy","Main Account",750.00,,,
+2025-04-11,2025-04-11,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: d35f330c-c10d-4d5a-bfc3-5e1f7b69dfa5","Main Account",-250.00,,,
+2025-04-11,2025-04-11,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: b951b7ca-849a-48ad-8e39-075c2a3c79c7","Main Account",-500.00,,,
+2025-04-12,2025-04-11,"TESLA CANTINE",,Presentment,,"Main Account",-5.4,5.4,EUR,1
+2025-04-13,2025-04-12,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-04-14,2025-04-14,"Zola Zita GmbH",,Presentment,,"Main Account",-3,3,EUR,1
+2025-04-15,2025-04-15,"BATACCHI TOMMASO","IT15Z0303202801010000011161","Credit Transfer",Savings,"Main Account",999.00,,,
+2025-04-15,2025-04-15,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 62759441-c187-4fa5-8669-18cc1ed369f6","Main Account",-999.00,,,
+2025-04-16,2025-04-15,"TESLA CANTINE",,Presentment,,"Main Account",-5.4,5.4,EUR,1
+2025-04-17,2025-04-16,"TESLA CANTINE",,Presentment,,"Main Account",-6,6,EUR,1
+2025-04-17,2025-04-16,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-04-17,2025-04-17,"Tommaso Batacchi",LT473250043398366091,"Debit Transfer","Sent from N26","Main Account",-50.00,,,
+2025-04-18,2025-04-17,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-04-18,2025-04-18,"UBER   *EATS",,Presentment,,"Main Account",-26.87,26.87,EUR,1
+2025-04-18,2025-04-18,"Mortgage Savings",,"Credit Transfer",,"Main Account",100.00,,,
+2025-04-19,2025-04-18,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-04-19,2025-04-19,"Cafe am Ring",,Presentment,,"Main Account",-26.25,26.25,EUR,1
+2025-04-19,2025-04-19,"Tiefgarage Frauenkirch",,Presentment,,"Main Account",-28,28,EUR,1
+2025-04-19,2025-04-19,"Somico GmbH",,Presentment,,"Main Account",-33.9,33.9,EUR,1
+2025-04-24,2025-04-23,"TESLA CANTINE",,Presentment,,"Main Account",-6,6,EUR,1
+2025-04-25,2025-04-24,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-04-25,2025-04-25,"Tesla Manufa. Brandenburg - Payroll",DE10502109000218622844,"Credit Transfer","Salary 042025","Main Account",3586.00,,,
+2025-04-25,2025-04-25,"Mortgage Savings",,"Debit Transfer","Income sorter moved 45%","Main Account",-1613.70,,,
+2025-04-26,2025-04-25,APPLE.COM/BILL,,Presentment,,"Main Account",-2.99,2.99,EUR,1
+2025-04-26,2025-04-25,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-04-27,2025-04-26,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-04-27,2025-04-27,"Sorsi e Morsi",,Presentment,,"Main Account",-10,10,EUR,1
+2025-04-27,2025-04-27,"WWW.AMAZON.* RY7GO2L95",,Presentment,,"Main Account",-0.96,0.96,EUR,1
+2025-04-28,2025-04-28,"SumUp  *Padel Berlin G",,Presentment,,"Main Account",-5,5,EUR,1
+2025-04-30,2025-04-29,"Stephanie Furreta Bento",DE53269513110161379391,"Credit Transfer","trip to Italy - Stephi","Main Account",90.00,,,
+2025-04-30,2025-04-29,"TESLA CANTINE",,Presentment,,"Main Account",-5.6,5.6,EUR,1
+2025-04-30,2025-04-30,"AMERICAN EXPRESS EUROPE S.A. (Germany branch)",DE05500700100095599700,"Direct Debit",3750-799922-21003,"Main Account",-1063.29,,,
+2025-05-01,2025-04-30,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-05-02,2025-05-01,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-05-02,2025-05-02,"SMART LIVING OBJEKT GUERTEL",DE30701205000200134788,"Direct Debit","-728,00 GRUNDMIETE 05/25 / -185,00 BK-PAUSCHALE 05/2 /","Main Account",-913.00,,,
+2025-05-02,2025-05-02,"Spaeti Nightshop",,Presentment,,"Main Account",-13,13,EUR,1
+2025-05-02,2025-05-02,"Mortgage Savings",,"Credit Transfer",,"Main Account",350.00,,,
+2025-05-03,2025-05-02,"Spatkauf Mehmet Korkma",,Presentment,,"Main Account",-12,12,EUR,1
+2025-05-03,2025-05-03,"PAYPAL *WEWASH GMBH",,Presentment,,"Main Account",-12,12,EUR,1
+2025-05-03,2025-05-03,"PAYPAL *URBANSPORTS",,Presentment,,"Main Account",-9.9,9.9,EUR,1
+2025-05-05,2025-05-05,"PAYPAL *MICROSOFT",,Presentment,,"Main Account",-2,2,EUR,1
+2025-05-05,2025-05-05,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 4d0e2077-6831-496f-86d5-f97cd4a02f7b","Main Account",-350.00,,,
+2025-05-05,2025-05-05,Feather,IE30CITI99005132956548,"Direct Debit","Feather - Insurance","Main Account",-4.94,,,
+2025-05-07,2025-05-06,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-05-08,2025-05-07,"TESLA CANTINE",,Presentment,,"Main Account",-4.5,4.5,EUR,1
+2025-05-08,2025-05-08,"Sergio Esteban Suazo",DE04120400000461907800,"Credit Transfer","Cianci shirt","Main Account",10.00,,,
+2025-05-08,2025-05-08,"Tommaso Batacchi",DE15100101781368929673,"Credit Transfer","Sent from Revolut","Main Account",99.57,,,
+2025-05-09,2025-05-08,"TESLA CANTINE",,Presentment,,"Main Account",-5.4,5.4,EUR,1
+2025-05-09,2025-05-09,"Busverkehr Oder-Spree GmbH",DE61100100100152818104,"Direct Debit","ABRECHNUNG A43356 05/2025","Main Account",-30.10,,,
+2025-05-09,2025-05-09,"CIANCI FRANCESCO","IT28M0538703800000002516469","Credit Transfer",Ticheit,"Main Account",6.00,,,
+2025-05-10,2025-05-09,"TESLA CANTINE",,Presentment,,"Main Account",-4.9,4.9,EUR,1
+2025-05-11,2025-05-10,"TESLA CANTINE",,Presentment,,"Main Account",-6.4,6.4,EUR,1
+2025-05-11,2025-05-10,"EDEKA Thaut",,Presentment,,"Main Account",-12.98,12.98,EUR,1
+2025-05-12,2025-05-12,"PAYPAL *PMNTSBVEATS",,Presentment,,"Main Account",-15.67,15.67,EUR,1
+2025-05-12,2025-05-12,"Stephanie Furreta Bento",DE43100101788921740370,"Credit Transfer","Croatia - Stephi","Main Account",160.00,,,
+2025-05-13,2025-05-13,"Luca Tamponi",DE08100110012629565977,MoneyBeam,"BBQ CURti","Main Account",-16,,,
+2025-05-14,2025-05-13,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-05-14,2025-05-14,"Mortgage Savings",,"Credit Transfer",,"Main Account",1000.00,,,
+2025-05-14,2025-05-14,CARJET.COM,,Presentment,,"Main Account",-225.63,225.63,EUR,1
+2025-05-14,2025-05-14,"FADE CLUB Cutbusser I",,Presentment,,"Main Account",-19,19,EUR,1
+2025-05-14,2025-05-14,"TESLA CANTINE",,Presentment,,"Main Account",-7.5,7.5,EUR,1
+2025-05-17,2025-05-16,"TESLA CANTINE",,Presentment,,"Main Account",-4.5,4.5,EUR,1
+2025-05-18,2025-05-17,"TESLA CANTINE",,Presentment,,"Main Account",-7.5,7.5,EUR,1
+2025-05-18,2025-05-18,"Mortgage Savings",,"Debit Transfer",,"Main Account",-750.00,,,
+2025-05-20,2025-05-20,"Stephanie Furreta Bento",DE43100101788921740370,"Credit Transfer","Movie timeee","Main Account",14.90,,,
+2025-05-20,2025-05-20,"Edoardo Albrizio",DE27100110012154289497,"Credit Transfer","Mission impossibile","Main Account",14.90,,,
+2025-05-20,2025-05-20,"CIANCI FRANCESCO","IT28M0538703800000002516469","Credit Transfer",Mi,"Main Account",14.90,,,
+2025-05-21,2025-05-20,"TESLA CANTINE",,Presentment,,"Main Account",-5.4,5.4,EUR,1
+2025-05-21,2025-05-21,"PAYPAL *URBANSPORTS",,Presentment,,"Main Account",-30,30,EUR,1
+2025-05-22,2025-05-21,"TESLA CANTINE",,Presentment,,"Main Account",-4.9,4.9,EUR,1
+2025-05-23,2025-05-22,"TESLA CANTINE",,Presentment,,"Main Account",-5.4,5.4,EUR,1
+2025-05-23,2025-05-23,"Tesla Manufa. Brandenburg - Payroll",DE10502109000218622844,"Credit Transfer","Salary 052025","Main Account",3694.52,,,
+2025-05-23,2025-05-23,"Mortgage Savings",,"Debit Transfer","Income sorter moved 45%","Main Account",-1662.53,,,
+2025-05-24,2025-05-23,"TESLA CANTINE",,Presentment,,"Main Account",-1.5,1.5,EUR,1
+2025-05-24,2025-05-24,"Tommaso Batacchi",DE15100101781368929673,"Credit Transfer","Sent from Revolut","Main Account",40.00,,,
+2025-05-24,2025-05-24,"Stephanie Furreta Bento",DE53269513110161379391,"Credit Transfer","Croatia - Stephi","Main Account",468.50,,,
+2025-05-24,2025-05-24,"Edoardo Albrizio",DE27100110012154289497,"Credit Transfer","Pizzata italiani","Main Account",35.00,,,
+2025-05-24,2025-05-24,"CIANCI FRANCESCO","IT28M0538703800000002516469","Credit Transfer",Mi,"Main Account",16.32,,,
+2025-05-25,2025-05-24,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-05-26,2025-05-26,APPLE.COM/BILL,,Presentment,,"Main Account",-2.99,2.99,EUR,1
+2025-05-27,2025-05-27,"CIANCI                             FRANCESCO","IT28M0538703800000002516469","Credit Transfer",Mi,"Main Account",8.50,,,
+2025-05-28,2025-05-27,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-05-28,2025-05-27,"TESLA CANTINE",,Presentment,,"Main Account",-1.5,1.5,EUR,1
+2025-05-28,2025-05-28,"Mortgage Savings",,"Credit Transfer",,"Main Account",1000.00,,,
+2025-05-29,2025-05-28,"TESLA CANTINE",,Presentment,,"Main Account",-4.5,4.5,EUR,1
+2025-05-29,2025-05-29,"AMERICAN EXPRESS EUROPE S.A. (Germany branch)",DE05500700100095599700,"Direct Debit",3750-799922-21003,"Main Account",-2102.80,,,
+2025-05-30,2025-05-29,"TESLA CANTINE",,Presentment,,"Main Account",-7.1,7.1,EUR,1
+2025-06-01,2025-06-01,"frannz GmbH & Co. KG",,Presentment,,"Main Account",-15.5,15.5,EUR,1
+2025-06-01,2025-06-01,"frannz GmbH & Co. KG",,Presentment,,"Main Account",-15,15,EUR,1
+2025-06-02,2025-06-02,"SMART LIVING OBJEKT GUERTEL",DE30701205000200134788,"Direct Debit","-728,00 GRUNDMIETE 06/25 / -185,00 BK-PAUSCHALE 06/2 /","Main Account",-913.00,,,
+2025-06-03,2025-06-03,"ANGELINI ANNALISA","IT77I0301503200000005601986","Credit Transfer",compleanno,"Main Account",50.00,,,
+2025-06-03,2025-06-03,"PAYPAL *URBANSPORTS",,Presentment,,"Main Account",-39.9,39.9,EUR,1
+2025-06-03,2025-06-03,"REWE Flughafen Koe",,Presentment,,"Main Account",-1.24,1.24,EUR,1
+2025-06-03,2025-06-03,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: ab9f26e5-26a8-41e6-a021-12c82d8629cd","Main Account",-350.00,,,
+2025-06-03,2025-06-03,Feather,IE30CITI99005132956548,"Direct Debit","Feather - Insurance","Main Account",-4.94,,,
+2025-06-04,2025-06-04,"PAYPAL *WEWASH GMBH",,Presentment,,"Main Account",-11.5,11.5,EUR,1
+2025-06-04,2025-06-04,"PAYPAL *MICROSOFT",,Presentment,,"Main Account",-2,2,EUR,1
+2025-06-04,2025-06-04,"Genuss u. Harmonie",,Presentment,,"Main Account",-6.1,6.1,EUR,1
+2025-06-06,2025-06-06,"Edoardo Albrizio",DE27100110012154289497,"Credit Transfer",Perreo,"Main Account",16.32,,,
+2025-06-06,2025-06-06,"Busverkehr Oder-Spree GmbH",DE61100100100152818104,"Direct Debit","ABRECHNUNG A43356 06/2025","Main Account",-30.10,,,
+2025-06-07,2025-06-07,"Huxleys Neue Welt",,Presentment,,"Main Account",-22.5,22.5,EUR,1
+2025-06-08,2025-06-07,"Ben Thanh",,Presentment,,"Main Account",-16.3,16.3,EUR,1
+2025-06-08,2025-06-08,"Huxleys Neue Welt",,Presentment,,"Main Account",-38.5,38.5,EUR,1
+2025-06-12,2025-06-12,"Genuss u. Harmonie",,Presentment,,"Main Account",-8.1,8.1,EUR,1
+2025-06-14,2025-06-14,"Genuss u. Harmonie",,Presentment,,"Main Account",-8.1,8.1,EUR,1
+2025-06-18,2025-06-17,"APOTHEKE IM RINGCENTER",,Presentment,,"Main Account",-57.25,57.25,EUR,1
+2025-06-18,2025-06-17,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-06-18,2025-06-17,"FADE CLUB Cutbusser I",,Presentment,,"Main Account",-19,19,EUR,1
+2025-06-19,2025-06-19,"HENNIG S BACKSTUBE",,Presentment,,"Main Account",-1.5,1.5,EUR,1
+2025-06-19,2025-06-19,"TESLA CANTINE",,Presentment,,"Main Account",-5.9,5.9,EUR,1
+2025-06-20,2025-06-19,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-06-21,2025-06-20,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-06-21,2025-06-21,"Sorsi e Morsi",,Presentment,,"Main Account",-15,15,EUR,1
+2025-06-22,2025-06-21,"Dosha Teehaus GbH",,Presentment,,"Main Account",-6.1,6.1,EUR,1
+2025-06-23,2025-06-22,"LE LANCE DI FIESOLE",,Presentment,,"Main Account",-34,34,EUR,1
+2025-06-23,2025-06-23,"PITTA MINGOLLI",,Presentment,,"Main Account",-15,15,EUR,1
+2025-06-23,2025-06-23,"ITALIAN TEAM",,Presentment,,"Main Account",-8,8,EUR,1
+2025-06-24,2025-06-24,"Praxis.AOS Allgemeinmedizin Orthopadie Schmerztherapie",DE78300606010205447470,"Debit Transfer","Re-Nr 6531 Tommaso Batacchi","Main Account",-21.44,,,
+2025-06-24,2025-06-24,"Mortgage Savings",,"Credit Transfer",,"Main Account",4900.00,,,
+2025-06-24,2025-06-24,"BATACCHI TOMMASO","IT15Z0303202801010000011161","Credit Transfer","ultimo trasferimento","Main Account",1400.00,,,
+2025-06-24,2025-06-24,"Mortgage Savings",,"Debit Transfer","BATACCHI TOMMASO ultimo trasferimento","Main Account",-1400.00,,,
+2025-06-25,2025-06-24,"PASTICCERIA NENCIONI",,Presentment,,"Main Account",-6,6,EUR,1
+2025-06-25,2025-06-25,"Tesla Manufa. Brandenburg - Payroll",DE10502109000218622844,"Credit Transfer","Salary 062025","Main Account",3569.36,,,
+2025-06-25,2025-06-25,"Mortgage Savings",,"Debit Transfer","Income sorter moved 45%","Main Account",-1606.21,,,
+2025-06-25,2025-06-25,"Equities Settlement account",DE36100110012854407302,"Credit Transfer","N26 cash dividend transaction - transaction ID 4703e2bf-117f-48e2-166d-901a7da43e75 - ISIN IE000SIZJ2B2","Main Account",46.70,,,
+2025-06-26,2025-06-25,APPLE.COM/BILL,,Presentment,,"Main Account",-2.99,2.99,EUR,1
+2025-06-26,2025-06-26,"MORBIDO E CROCCANTE",,Presentment,,"Main Account",-24.5,24.5,EUR,1
+2025-06-27,2025-06-26,"WWW.AT-BUS IT APP",,Presentment,,"Main Account",-3.4,3.4,EUR,1
+2025-06-28,2025-06-28,"Tommaso Batacchi",LT473250043398366091,"Debit Transfer","Sent from N26","Main Account",-100.00,,,
+2025-06-28,2025-06-28,"Tommaso Batacchi",DE15100101781368929673,"Credit Transfer","Sent from Revolut","Main Account",100.00,,,
+2025-06-29,2025-06-29,"Tommaso Batacchi",LT473250043398366091,"Debit Transfer","Sent from N26","Main Account",-100.00,,,
+2025-06-29,2025-06-29,"WWW.2C2P.COM*2C2P BOLT",,Presentment,,"Main Account",-0.4,15,THB,0.0266666667
+2025-06-29,2025-06-29,"7-11 CENTRAL VIEWTHALE",,Presentment,,"Main Account",-7.2,270,THB,0.0266666667
+2025-06-29,2025-06-29,"WAN TEA",,Presentment,,"Main Account",-2.46,93,THB,0.0264516129
+2025-06-30,2025-06-30,"BARMER Ersatzkasse",DE45370205000008300000,"Credit Transfer","747335175047 ERSTATTUNG","Main Account",78.69,,,
+2025-06-30,2025-06-30,"AMERICAN EXPRESS EUROPE S.A. (Germany branch)",DE05500700100095599700,"Direct Debit",3750-799922-21003,"Main Account",-4873.94,,,
+2025-07-01,2025-07-01,"THE MOMENT-PATTAYA-2",,Presentment,,"Main Account",-22.37,845.3,THB,0.0264639773
+2025-07-01,2025-07-01,"7-11 CENTRAL VIEWTHALE",,Presentment,,"Main Account",-11.48,434,THB,0.0264516129
+2025-07-01,2025-07-01,"SMART LIVING OBJEKT GUERTEL",DE30701205000200134788,"Direct Debit","-728,00 GRUNDMIETE 07/25 / -185,00 BK-PAUSCHALE 07/2 /","Main Account",-913.00,,,
+2025-07-01,2025-07-01,"Rundfunk ARD, ZDF, DRadio",DE85500500000000234567,"Direct Debit","Rundfunk 07.2025 - 09.2025 Beitragsnr. 161786743 Aenderungen ganz bequem: www.rundfunkbeitrag.de","Main Account",-55.08,,,
+2025-07-02,2025-07-02,Feather,IE30CITI99005132956548,"Direct Debit","Feather - Insurance","Main Account",-4.94,,,
+2025-07-02,2025-07-02,"THE FACE SHOP-C.PATTAY",,Presentment,,"Main Account",-44.86,1702.6,THB,0.0263479384
+2025-07-03,2025-07-03,"Stephanie Furreta Bento",DE43100101788921740370,"Credit Transfer","Hyrox ticket + Thailand","Main Account",130.00,,,
+2025-07-03,2025-07-03,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 7305f0c4-0f94-42b0-b1c7-f8e349bdba21","Main Account",-350.00,,,
+2025-07-03,2025-07-03,"PAYPAL *URBANSPORTS",,Presentment,,"Main Account",-39.9,39.9,EUR,1
+2025-07-04,2025-07-04,"PAYPAL *MICROSOFT",,Presentment,,"Main Account",-2,2,EUR,1
+2025-07-04,2025-07-04,"PAYPAL *WEWASH GMBH",,Presentment,,"Main Account",-6,6,EUR,1
+2025-07-05,2025-07-05,"THE OXYGEN PATTAYA",,Presentment,,"Main Account",-16.7,631.3,THB,0.0264533502
+2025-07-07,2025-07-06,"BOUNCE - BOUNCE.COM",,Presentment,,"Main Account",-9.19,348,THB,0.026408046
+2025-07-07,2025-07-07,"Busverkehr Oder-Spree GmbH",DE61100100100152818104,"Direct Debit","ABRECHNUNG A43356 07/2025","Main Account",-30.10,,,
+2025-07-10,2025-07-10,"THE MARKET BISTRO GRIL",,Presentment,,"Main Account",-6.53,247.17,THB,0.0264190638
+2025-07-10,2025-07-10,"THE TOY",,Presentment,,"Main Account",-36.99,1400,THB,0.0264214286
+2025-07-11,2025-07-11,"7-11 CENTRAL VIEWTHALE",,Presentment,,"Main Account",-11.15,422,THB,0.0264218009
+2025-07-13,2025-07-13,"Kado om de hoek",,Presentment,,"Main Account",-2.95,2.95,EUR,1
+2025-07-13,2025-07-13,"Strandpaviljoen Bora B",,Presentment,,"Main Account",-6.7,6.7,EUR,1
+2025-07-14,2025-07-13,"Den Haag CS",,Presentment,,"Main Account",-0.9,0.9,EUR,1
+2025-07-14,2025-07-13,"Albert Heijn 1327",,Presentment,,"Main Account",-1.6,1.6,EUR,1
+2025-07-14,2025-07-14,"Tommaso Batacchi",DE15100101781368929673,"Credit Transfer","Sent from Revolut","Main Account",40.00,,,
+2025-07-14,2025-07-13,NLOVQX584VM74YM54M,,Presentment,,"Main Account",-10.9,10.9,EUR,1
+2025-07-14,2025-07-14,"Amsterdam Zuid 4208-11",,Presentment,,"Main Account",-0.9,0.9,EUR,1
+2025-07-14,2025-07-14,"ALBERT HEIJN 1868",,Presentment,,"Main Account",-1.34,1.34,EUR,1
+2025-07-15,2025-07-14,NLOV6D5EE9Q6QND54L,,Presentment,,"Main Account",-4.89,4.89,EUR,1
+2025-07-15,2025-07-14,"ALBERT HEIJN 1653",,Presentment,,"Main Account",-8.68,8.68,EUR,1
+2025-07-16,2025-07-15,"Dosha Teehaus GbH",,Presentment,,"Main Account",-5.5,5.5,EUR,1
+2025-07-16,2025-07-15,NLOV485Q7978XQV59L,,Presentment,,"Main Account",-4.8,4.8,EUR,1
+2025-07-16,2025-07-15,NLOVX75P8Q8MEXE58Z,,Presentment,,"Main Account",-5.6,5.6,EUR,1
+2025-07-17,2025-07-16,NLOV8R5LY9NQB96JM6,,Presentment,,"Main Account",-2.8,2.8,EUR,1
+2025-07-17,2025-07-16,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-07-18,2025-07-17,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-07-18,2025-07-18,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 1e85cf4f-ccbd-4500-91f5-3c8bac597747","Main Account",-136.18,,,
+2025-07-20,2025-07-20,"DECATHLON Deutschland",,Presentment,,"Main Account",-58.96,58.96,EUR,1
+2025-07-21,2025-07-20,"14684 PULL BEAR ALEXA",,Presentment,,"Main Account",-29.99,29.99,EUR,1
+2025-07-21,2025-07-21,"AGON Sportpark GmbH",,Presentment,,"Main Account",-6.2,6.2,EUR,1
+2025-07-24,2025-07-23,"TESLA CANTINE",,Presentment,,"Main Account",-5.9,5.9,EUR,1
+2025-07-24,2025-07-24,"Nextbike GmbH",,Presentment,,"Main Account",-1,1,EUR,1
+2025-07-25,2025-07-24,"TESLA CANTINE",,Presentment,,"Main Account",-5.9,5.9,EUR,1
+2025-07-25,2025-07-25,"Tesla Manufa. Brandenburg - Payroll",DE10502109000218622844,"Credit Transfer","Salary 072025","Main Account",7574.96,,,
+2025-07-25,2025-07-25,"Mortgage Savings",,"Debit Transfer","Income Sorter","Main Account",-1650.00,,,
+2025-07-25,2025-07-25,"Mortgage Savings",,"Debit Transfer",,"Main Account",-1000.00,,,
+2025-07-25,2025-07-25,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 0a2dbf56-c2cf-4fe8-99a4-4e3694776fcb","Main Account",-282.10,,,
+2025-07-26,2025-07-25,APPLE.COM/BILL,,Presentment,,"Main Account",-2.99,2.99,EUR,1
+2025-07-26,2025-07-25,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-07-26,2025-07-26,"Mortgage Savings",,"Credit Transfer",,"Main Account",1000.00,,,
+2025-07-28,2025-07-28,"REPSOL E1555",,Presentment,,"Main Account",-4.29,4.29,EUR,1
+2025-07-28,2025-07-28,"DREAM BOOKER Dubrovnik",,Presentment,,"Main Account",-218.18,218.18,EUR,1
+2025-07-29,2025-07-29,"PAD PORT SETUBAL",,Presentment,,"Main Account",-11.2,11.2,EUR,1
+2025-07-29,2025-07-29,"PAYPAYUE INST PAGAM",,Presentment,,"Main Account",-1,1,EUR,1
+2025-07-29,2025-07-29,"PAD PORT SETUBAL",,Presentment,,"Main Account",-2.75,2.75,EUR,1
+2025-07-29,2025-07-29,LOJA,,Presentment,,"Main Account",-3,3,EUR,1
+2025-07-30,2025-07-29,"TROIA MARKET",,Presentment,,"Main Account",-6.29,6.29,EUR,1
+2025-07-30,2025-07-29,"ATLANTIC FERRIES T L",,Presentment,,"Main Account",-18.6,18.6,EUR,1
+2025-07-30,2025-07-29,"PIZZARIA BONFIM",,Presentment,,"Main Account",-0.9,0.9,EUR,1
+2025-07-30,2025-07-30,"AMERICAN EXPRESS EUROPE S.A. (Germany branch)",DE05500700100095599700,"Direct Debit",3750-799922-21003,"Main Account",-4424.43,,,
+2025-07-30,2025-07-30,"MELHOR CROISSANT",,Presentment,,"Main Account",-11.65,11.65,EUR,1
+2025-07-31,2025-07-31,"BAGGA SETUBAL",,Presentment,,"Main Account",-3.5,3.5,EUR,1
+2025-07-31,2025-07-31,A12,,Presentment,,"Main Account",-2.45,2.45,EUR,1
+2025-07-31,2025-07-31,"ART FOR FUN SOC.",,Presentment,,"Main Account",-13,13,EUR,1
+2025-07-31,2025-07-31,"QUIOSQUE OLA CASTELO",,Presentment,,"Main Account",-3,3,EUR,1
+2025-08-01,2025-07-31,"TAQUERIA CHIADO",,Presentment,,"Main Account",-1.6,1.6,EUR,1
+2025-08-01,2025-07-31,"STRADIVARIUS CHIADO",,Presentment,,"Main Account",-12.99,12.99,EUR,1
+2025-08-01,2025-07-31,"BILHETEIRA CASTELO",,Presentment,,"Main Account",-15,15,EUR,1
+2025-08-01,2025-07-31,"ROCKALOT PRAIA",,Presentment,,"Main Account",-22,22,EUR,1
+2025-08-01,2025-08-01,"SMART LIVING OBJEKT GUERTEL",DE30701205000200134788,"Direct Debit","-728,00 GRUNDMIETE 08/25 / -185,00 BK-PAUSCHALE 08/2 /","Main Account",-913.00,,,
+2025-08-02,2025-08-02,"PAYPAL *UBERPAYMENT",,Presentment,,"Main Account",-3.96,3.96,EUR,1
+2025-08-02,2025-08-02,"PAYPAL *UBERPAYMENT",,Presentment,,"Main Account",-4.94,4.94,EUR,1
+2025-08-02,2025-08-02,"PAYPAL *URBANSPORTS",,Presentment,,"Main Account",-39.9,39.9,EUR,1
+2025-08-04,2025-08-03,"PAD PORT SETUBAL",,Presentment,,"Main Account",-14.9,14.9,EUR,1
+2025-08-04,2025-08-03,"ATLANTIC FERRIES T L",,Presentment,,"Main Account",-18.6,18.6,EUR,1
+2025-08-04,2025-08-04,Feather,IE30CITI99005132956548,"Direct Debit","Feather - Insurance","Main Account",-4.94,,,
+2025-08-04,2025-08-03,"O CORETO",,Presentment,,"Main Account",-7.2,7.2,EUR,1
+2025-08-05,2025-08-03,"SABORES DO CHURRASCO",,Presentment,,"Main Account",-78,78,EUR,1
+2025-08-05,2025-08-04,"PAYPAL *WEWASH GMBH",,Presentment,,"Main Account",-9,9,EUR,1
+2025-08-05,2025-08-04,"PAYPAL *MICROSOFT",,Presentment,,"Main Account",-2,2,EUR,1
+2025-08-05,2025-08-04,"PAYPAL *UBERPAYMENT",,Presentment,,"Main Account",-4.02,4.02,EUR,1
+2025-08-06,2025-08-04,A007,,Presentment,,"Main Account",-2.2,2.2,EUR,1
+2025-08-06,2025-08-04,"ROCKALOT PRAIA",,Presentment,,"Main Account",-15,15,EUR,1
+2025-08-06,2025-08-04,"DUNAS STORE",,Presentment,,"Main Account",-44.9,44.9,EUR,1
+2025-08-06,2025-08-05,"VERSAILLES I-ROTISSE",,Presentment,,"Main Account",-11.35,11.35,EUR,1
+2025-08-07,2025-08-05,LEFTIES,,Presentment,,"Main Account",-52.09,52.09,EUR,1
+2025-08-07,2025-08-07,"Mortgage Savings",,"Credit Transfer",,"Main Account",250.00,,,
+2025-08-07,2025-08-06,"Backwerk 337",,Presentment,,"Main Account",-6.65,6.65,EUR,1
+2025-08-07,2025-08-07,"Busverkehr Oder-Spree GmbH",DE61100100100152818104,"Direct Debit","ABRECHNUNG A43356 08/2025","Main Account",-30.10,,,
+2025-08-08,2025-08-06,"TESLA CANTINE",,Presentment,,"Main Account",-5.9,5.9,EUR,1
+2025-08-08,2025-08-08,"CIANCI FRANCESCO","IT28M0538703800000002516469","Credit Transfer",Beirut,"Main Account",15.00,,,
+2025-08-09,2025-08-07,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-08-09,2025-08-08,"TESLA CANTINE",,Presentment,,"Main Account",-5.9,5.9,EUR,1
+2025-08-12,2025-08-11,"BMOVE SHOP",,Presentment,,"Main Account",-2.6,2.6,EUR,1
+2025-08-12,2025-08-11,"PAYPAL *CLOUDFLARE",,Presentment,,"Main Account",-9.37,9.37,EUR,1
+2025-08-12,2025-08-11,"Shelby bar Dubrovnik",,Presentment,,"Main Account",-29,29,EUR,1
+2025-08-12,2025-08-11,"KONOBA DANDY",,Presentment,,"Main Account",-82.1,82.1,EUR,1
+2025-08-13,2025-08-13,"Mortgage Savings",,"Credit Transfer",,"Main Account",250.00,,,
+2025-08-14,2025-08-13,"PALMA, 2850789001",,Presentment,,"Main Account",-33.2,33.2,EUR,1
+2025-08-14,2025-08-13,"CAFFE BAR ROKO",,Presentment,,"Main Account",-1.4,1.4,EUR,1
+2025-08-15,2025-08-14,"BMOVE SHOP",,Presentment,,"Main Account",-7.2,7.2,EUR,1
+2025-08-15,2025-08-14,"ADRIA OIL",,Presentment,,"Main Account",-60.01,60.01,EUR,1
+2025-08-15,2025-08-14,"SUPSTRUKCIJE DIOKLEC.P",,Presentment,,"Main Account",-12,12,EUR,1
+2025-08-15,2025-08-14,BRACERA,,Presentment,,"Main Account",-63,63,EUR,1
+2025-08-15,2025-08-14,"AUTOCESTA A1 PRGOMET-P",,Presentment,,"Main Account",-3.3,3.3,EUR,1
+2025-08-15,2025-08-14,"AUTOCESTA A1 PRGOMET-P",,Presentment,,"Main Account",-3.3,3.3,EUR,1
+2025-08-17,2025-08-16,"ILIAD ITALIA",,Presentment,,"Main Account",-19.98,19.98,EUR,1
+2025-08-17,2025-08-16,"KONOBA PORTUN",,Presentment,,"Main Account",-38.2,38.2,EUR,1
+2025-08-17,2025-08-16,"FELIX OB ZA UG VL.TINA",,Presentment,,"Main Account",-10.5,10.5,EUR,1
+2025-08-17,2025-08-16,"STUDENAC 387",,Presentment,,"Main Account",-8.25,8.25,EUR,1
+2025-08-21,2025-08-20,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-08-22,2025-08-21,"TESLA CANTINE",,Presentment,,"Main Account",-4.5,4.5,EUR,1
+2025-08-22,2025-08-22,"Stephanie Furreta Bento",DE43100101788921740370,"Credit Transfer","Flight Maldives - Stephi","Main Account",1000.00,,,
+2025-08-23,2025-08-22,"TESLA CANTINE",,Presentment,,"Main Account",-4.5,4.5,EUR,1
+2025-08-24,2025-08-24,"Dosha Teehaus GbH",,Presentment,,"Main Account",-5.5,5.5,EUR,1
+2025-08-25,2025-08-24,"Zola Zita GmbH",,Presentment,,"Main Account",-36.25,36.25,EUR,1
+2025-08-25,2025-08-25,"Tesla Manufa. Brandenburg - Payroll",DE10502109000218622844,"Credit Transfer","Salary 082025","Main Account",6719.11,,,
+2025-08-25,2025-08-25,"Mortgage Savings",,"Debit Transfer","Income Sorter","Main Account",-1650.00,,,
+2025-08-26,2025-08-26,APPLE.COM/BILL,,Presentment,,"Main Account",-2.99,2.99,EUR,1
+2025-08-26,2025-08-26,"Fatoush Friedrichshain",,Presentment,,"Main Account",-42.25,42.25,EUR,1
+2025-08-26,2025-08-26,"Nextbike GmbH",,Presentment,,"Main Account",-1,1,EUR,1
+2025-08-26,2025-08-26,"ILIAD ITALIA",,Presentment,,"Main Account",-5,5,EUR,1
+2025-08-28,2025-08-27,"TESLA CANTINE",,Presentment,,"Main Account",-5.9,5.9,EUR,1
+2025-08-29,2025-08-29,"AMERICAN EXPRESS EUROPE S.A. (Germany branch)",DE05500700100095599700,"Direct Debit",3750-799922-21003,"Main Account",-4144.51,,,
+2025-08-30,2025-08-29,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-08-31,2025-08-31,"AGON Sportpark GmbH",,Presentment,,"Main Account",-8,8,EUR,1
+2025-09-01,2025-08-31,"BERLIN KART INDOORBAHN",,Presentment,,"Main Account",-15,15,EUR,1
+2025-09-01,2025-09-01,"Nextbike GmbH",,Presentment,,"Main Account",-1,1,EUR,1
+2025-09-01,2025-09-01,"SMART LIVING OBJEKT GUERTEL",DE30701205000200134788,"Direct Debit","-728,00 GRUNDMIETE 09/25 / -185,00 BK-PAUSCHALE 09/2 /","Main Account",-913.00,,,
+2025-09-02,2025-09-01,"BAYRAKTAR KIOSK",,Presentment,,"Main Account",-1.5,1.5,EUR,1
+2025-09-02,2025-09-02,Feather,IE30CITI99005132956548,"Direct Debit","Feather - Insurance","Main Account",-4.94,,,
+2025-09-03,2025-09-03,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 42bfb1a7-f2bf-429a-9d91-67bac37135cd","Main Account",-350.00,,,
+2025-09-04,2025-09-03,"TESLA CANTINE",,Presentment,,"Main Account",-4.5,4.5,EUR,1
+2025-09-04,2025-09-03,"FADE CLUB Cutbusser I",,Presentment,,"Main Account",-19,19,EUR,1
+2025-09-05,2025-09-05,"Tommaso Batacchi",LT473250043398366091,"Debit Transfer","Sent from N26","Main Account",-10.00,,,
+2025-09-06,2025-09-05,"TESLA CANTINE",,Presentment,,"Main Account",-4.5,4.5,EUR,1
+2025-09-06,2025-09-05,"Dosha Teehaus GbH",,Presentment,,"Main Account",-5.5,5.5,EUR,1
+2025-09-07,2025-09-07,"Bmoovd Sportsbar  Bo",,Presentment,,"Main Account",-21,21,EUR,1
+2025-09-07,2025-09-07,"Autostadt GmbH",,Presentment,,"Main Account",-9.99,9.99,EUR,1
+2025-09-07,2025-09-07,"Autostadt GmbH  andere",,Presentment,,"Main Account",-38.2,38.2,EUR,1
+2025-09-08,2025-09-08,"Busverkehr Oder-Spree GmbH",DE61100100100152818104,"Direct Debit","ABRECHNUNG A43356 09/2025","Main Account",-30.10,,,
+2025-09-10,2025-09-09,"Dosha Teehaus GbH",,Presentment,,"Main Account",-5.5,5.5,EUR,1
+2025-09-11,2025-09-10,"TESLA CANTINE",,Presentment,,"Main Account",-4.5,4.5,EUR,1
+2025-09-12,2025-09-11,"Zahnarztpraxis am Chec",,Presentment,,"Main Account",-119.97,119.97,EUR,1
+2025-09-13,2025-09-12,"TESLA CANTINE",,Presentment,,"Main Account",-4.5,4.5,EUR,1
+2025-09-14,2025-09-13,"ASSI GIGLIO ROSSO",,Presentment,,"Main Account",-3,3,EUR,1
+2025-09-14,2025-09-13,"IL QUARTO GIUSTO",,Presentment,,"Main Account",-7,7,EUR,1
+2025-09-15,2025-09-15,"Audi BKK",DE93793200750001893300,"Credit Transfer","Rechnung vom 10.09.2025 30.00","Main Account",30.00,,,
+2025-09-15,2025-09-14,"STEFER SNC",,Presentment,,"Main Account",-18.1,18.1,EUR,1
+2025-09-16,2025-09-15,"ILIAD ITALIA",,Presentment,,"Main Account",-9.99,9.99,EUR,1
+2025-09-16,2025-09-15,"PASTICCERIA BELLUCCI D",,Presentment,,"Main Account",-7.7,7.7,EUR,1
+2025-09-16,2025-09-16,"Tommaso Batacchi",LT473250043398366091,"Debit Transfer","Sent from N26","Main Account",-80.00,,,
+2025-09-16,2025-09-16,"STRAPIZZA DI RABIEGI",,Presentment,,"Main Account",-7.7,7.7,EUR,1
+2025-09-17,2025-09-16,"Nextbike GmbH",,Presentment,,"Main Account",-2.7,2.7,EUR,1
+2025-09-17,2025-09-16,"Zabka NANO",,Presentment,,"Main Account",-1.79,1.79,EUR,1
+2025-09-18,2025-09-17,"TESLA CANTINE",,Presentment,,"Main Account",-4.9,4.9,EUR,1
+2025-09-19,2025-09-18,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-09-20,2025-09-19,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-09-22,2025-09-22,BET365,,Presentment,,"Main Account",-25,25,EUR,1
+2025-09-22,2025-09-22,N26,,Fee,"3 percent gambling fee for applicable Mastercard transactions","Main Account",-0.75,,,
+2025-09-24,2025-09-24,"Equities Settlement account",DE36100110012854407302,"Credit Transfer","N26 cash dividend transaction - transaction ID 4ff635fa-39e4-0129-ddc1-1de80852aa1a - ISIN IE000SIZJ2B2","Main Account",45.03,,,
+2025-09-25,2025-09-25,"Tesla Manufa. Brandenburg - Payroll",DE10502109000218622844,"Credit Transfer","Salary 092025","Main Account",3587.14,,,
+2025-09-25,2025-09-25,"Mortgage Savings",,"Debit Transfer","Income Sorter","Main Account",-1650.00,,,
+2025-09-25,2025-09-25,"Francesco Francaviglia",DE10100110012409631730,"Credit Transfer","Caparra ","Main Account",175.20,,,
+2025-09-25,2025-09-24,"Dosha Teehaus GbH",,Presentment,,"Main Account",-5.5,5.5,EUR,1
+2025-09-25,2025-09-24,"TESLA CANTINE",,Presentment,,"Main Account",-5.9,5.9,EUR,1
+2025-09-26,2025-09-25,"TESLA CANTINE",,Presentment,,"Main Account",-6.4,6.4,EUR,1
+2025-09-26,2025-09-25,"TESLA CANTINE",,Presentment,,"Main Account",-3,3,EUR,1
+2025-09-26,2025-09-25,"FADE CLUB Cutbusser I",,Presentment,,"Main Account",-19,19,EUR,1
+2025-09-27,2025-09-26,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-09-30,2025-09-30,"AMERICAN EXPRESS EUROPE S.A. (Germany branch)",DE05500700100095599700,"Direct Debit",3750-799922-21003,"Main Account",-1977.50,,,
+2025-10-01,2025-10-01,"Mortgage Savings",,"Credit Transfer",,"Main Account",1000.00,,,
+2025-10-01,2025-10-01,"Stephanie Furreta Bento",DE53269513110161379391,"Credit Transfer","Paris - Stephi","Main Account",272.00,,,
+2025-10-01,2025-10-01,"Rundfunk ARD, ZDF, DRadio",DE85500500000000234567,"Direct Debit","Rundfunk 10.2025 - 12.2025 Beitragsnr. 161786743 Aenderungen ganz bequem: www.rundfunkbeitrag.de","Main Account",-55.08,,,
+2025-10-01,2025-10-01,"SMART LIVING OBJEKT GUERTEL",DE30701205000200134788,"Direct Debit","-728,00 GRUNDMIETE 10/25 / -185,00 BK-PAUSCHALE 10/2 /","Main Account",-913.00,,,
+2025-10-02,2025-10-02,"PAYPAL *URBANSPORTS",,Presentment,,"Main Account",-39.9,39.9,EUR,1
+2025-10-02,2025-10-02,"BURGER KING RESTAURANT",,Presentment,,"Main Account",-13.66,16,USD,0.85375
+2025-10-02,2025-10-02,Feather,IE30CITI99005132956548,"Direct Debit","Feather - Insurance","Main Account",-4.94,,,
+2025-10-03,2025-10-03,"PAYPAL *UBER BV",,Presentment,,"Main Account",-6.62,6.62,EUR,1
+2025-10-03,2025-10-03,"PAYPAL *UBER BV",,Presentment,,"Main Account",-12.92,12.92,EUR,1
+2025-10-03,2025-10-03,"PAYPAL *MILES",,Presentment,,"Main Account",-29.5,29.5,EUR,1
+2025-10-03,2025-10-03,"PAYPAL *UBER BV",,Presentment,,"Main Account",-4.4,4.4,EUR,1
+2025-10-03,2025-10-03,"PAYPAL *WEWASH GMBH",,Presentment,,"Main Account",-6,6,EUR,1
+2025-10-03,2025-10-03,"PAYPAL *UBER BV",,Presentment,,"Main Account",-9.06,9.06,EUR,1
+2025-10-03,2025-10-03,"PAYPAL *UBER BV",,Presentment,,"Main Account",-4.9,4.9,EUR,1
+2025-10-03,2025-10-03,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 519a6bce-e16a-4799-8bad-4ffd22234d2c","Main Account",-350.00,,,
+2025-10-04,2025-10-04,"PAYPAL *UBER BV",,Presentment,,"Main Account",-3.18,3.18,EUR,1
+2025-10-04,2025-10-04,"PAYPAL *UBER BV",,Presentment,,"Main Account",-3.18,3.18,EUR,1
+2025-10-06,2025-10-06,"Annalisa Angelini","IT60F0366901600402331225802","Credit Transfer","China.s gifts","Main Account",125.00,,,
+2025-10-06,2025-10-06,"Tommaso Batacchi",LT473250043398366091,"Debit Transfer","Sent from N26","Main Account",-10.00,,,
+2025-10-07,2025-10-07,"Stephanie Furreta Bento",DE43100101788921740370,"Debit Transfer","Sent from N26","Main Account",-20.00,,,
+2025-10-08,2025-10-08,"Busverkehr Oder-Spree GmbH",DE61100100100152818104,"Direct Debit","ABRECHNUNG A43356 10/2025","Main Account",-30.10,,,
+2025-10-13,2025-10-13,"Equities Settlement account",DE36100110012854407302,"Credit Transfer","N26 unconditional payment for sell, paymentId: 833af6d0-ee09-4f6b-83a3-f2af040353e5","Main Account",243.80,,,
+2025-10-15,2025-10-14,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-10-16,2025-10-16,"ILIAD ITALIA",,Presentment,,"Main Account",-9.99,9.99,EUR,1
+2025-10-18,2025-10-17,"HENNIG S BACKSTUBE",,Presentment,,"Main Account",-1.5,1.5,EUR,1
+2025-10-18,2025-10-17,"TESLA CANTINE",,Presentment,,"Main Account",-4.5,4.5,EUR,1
+2025-10-19,2025-10-18,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-10-20,2025-10-20,"Stephanie Furreta Bento",DE43100101788921740370,"Credit Transfer",Stephi,"Main Account",113.50,,,
+2025-10-20,2025-10-20,"PAYPAL *PMNTSBVEATS",,Presentment,,"Main Account",-30.35,30.35,EUR,1
+2025-10-21,2025-10-21,"Mortgage Savings",,"Credit Transfer",,"Main Account",2290.00,,,
+2025-10-21,2025-10-21,"Stephanie Furreta Bento",DE43100101788921740370,"Debit Transfer",KAUTION,"Main Account",-2290.30,,,
+2025-10-22,2025-10-21,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-10-23,2025-10-22,"Foodji GmbH",,Presentment,,"Main Account",-1.98,1.98,EUR,1
+2025-10-23,2025-10-22,"TESLA CANTINE",,Presentment,,"Main Account",-4.9,4.9,EUR,1
+2025-10-24,2025-10-24,"Tesla Manufa. Brandenburg - Payroll",DE10502109000218622844,"Credit Transfer","Salary 102025","Main Account",3602.96,,,
+2025-10-24,2025-10-24,"Mortgage Savings",,"Debit Transfer","Income Sorter","Main Account",-1650.00,,,
+2025-10-25,2025-10-24,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-10-25,2025-10-25,"Mortgage Savings",,"Credit Transfer","Moving company","Main Account",175.00,,,
+2025-10-26,2025-10-26,"Dosha Teehaus GbH",,Presentment,,"Main Account",-10.6,10.6,EUR,1
+2025-10-26,2025-10-26,"Mortgage Savings",,"Credit Transfer","Mexico + China Money","Main Account",7000.00,,,
+2025-10-27,2025-10-27,N26,,Fee,"Travel eSIM Mexico - 5GB - 30 day(s)","Main Account",-13.49,,,
+2025-10-27,2025-10-27,"PAYPAL *PMNTSBVEATS",,Presentment,,"Main Account",-17.72,17.72,EUR,1
+2025-10-27,2025-10-27,"Stephanie Furreta Bento",DE43100101788921740370,"Debit Transfer","Moving Company","Main Account",-175.00,,,
+2025-10-29,2025-10-29,"Equities Settlement account",DE36100110012854407302,"Credit Transfer","N26 unconditional payment for sell, paymentId: e60eb2db-6fac-411d-bfb0-c22bde1c18a2","Main Account",222.00,,,
+2025-10-29,2025-10-29,"PAYPAL *UBRPAGOSMEX",,Presentment,,"Main Account",-0.7,0.7,EUR,1
+2025-10-30,2025-10-30,"AMERICAN EXPRESS EUROPE S.A. (Germany branch)",DE05500700100095599700,"Direct Debit",3750-799922-21003,"Main Account",-7872.32,,,
+2025-10-31,2025-11-03,"Smart Living Objekt Guertelstrasse GmbH and Co KG",DE30701205000200134788,"Debit Transfer","Erstellung Aufhebungsvertrags Tommaso Batacchi Wohnung 8302.0429","Main Account",-300.00,,,
+2025-11-02,2025-11-02,"Stephanie Bento",DE85100110012747517367,MoneyBeam,,"Main Account",-1,,,
+2025-11-02,2025-11-02,"Robinhood Europe UAB",LU034080000042455616,"Debit Transfer","Sent from N26","Main Account",-20.00,,,
+2025-11-02,2025-11-01,"PUERTA DE SERRA",,Presentment,,"Main Account",-19.77,420,MXN,0.0470714286
+2025-11-03,2025-11-02,"Taco Loco",,Presentment,,"Main Account",-11.8,11.8,EUR,1
+2025-11-03,2025-11-02,"Taco Loco",,Presentment,,"Main Account",-41.16,41.16,EUR,1
+2025-11-03,2025-11-03,"Tommaso Batacchi",LT473250043398366091,"Debit Transfer","Sent from N26","Main Account",-12.10,,,
+2025-11-03,2025-11-03,"Tommaso Batacchi",LT473250043398366091,"Debit Transfer","Sent from N26","Main Account",-24.00,,,
+2025-11-03,2025-11-03,"Robinhood Europe, UAB",LU544080000000029323,"Credit Transfer",,"Main Account",17.90,,,
+2025-11-03,2025-11-03,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 4cb66cd1-464d-4647-9999-3070ab604528","Main Account",-350.00,,,
+2025-11-03,2025-11-03,"SMART LIVING OBJEKT GUERTEL",DE30701205000200134788,"Direct Debit","-728,00 GRUNDMIETE 11/25 / -185,00 BK-PAUSCHALE 11/2 /","Main Account",-913.00,,,
+2025-11-03,2025-11-03,"PAYPAL *WEWASH GMBH",,Presentment,,"Main Account",-12,12,EUR,1
+2025-11-03,2025-11-03,"PAYPAL *URBANSPORTS",,Presentment,,"Main Account",-39.9,39.9,EUR,1
+2025-11-04,2025-11-04,N26,,Reward,"Your friend has joined N26! Enjoy your reward.","Main Account",30,,,
+2025-11-04,2025-11-04,Feather,IE30CITI99005132956548,"Direct Debit","Feather - Insurance","Main Account",-4.94,,,
+2025-11-06,2025-11-06,"Equities Settlement account",DE36100110012854407302,"Credit Transfer","N26 unconditional payment for sell, paymentId: 0bfcfbbc-5357-433b-a67a-e088c768984a","Main Account",0.32,,,
+2025-11-06,2025-11-05,"TESLA CANTINE",,Presentment,,"Main Account",-4.9,4.9,EUR,1
+2025-11-06,2025-11-05,"TESLA CANTINE",,Presentment,,"Main Account",-1.5,1.5,EUR,1
+2025-11-06,2025-11-05,"FADE CLUB Cutbusser I",,Presentment,,"Main Account",-19,19,EUR,1
+2025-11-06,2025-11-05,"TESLA CANTINE",,Presentment,,"Main Account",-2,2,EUR,1
+2025-11-07,2025-11-07,"Mortgage Savings",,"Credit Transfer",,"Main Account",250.00,,,
+2025-11-07,2025-11-06,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-11-07,2025-11-07,"Busverkehr Oder-Spree GmbH",DE61100100100152818104,"Direct Debit","ABRECHNUNG A43356 11/2025","Main Account",-30.10,,,
+2025-11-08,2025-11-07,"TESLA CANTINE",,Presentment,,"Main Account",-6,6,EUR,1
+2025-11-08,2025-11-07,"HENNIG S BACKSTUBE",,Presentment,,"Main Account",-1.7,1.7,EUR,1
+2025-11-09,2025-11-09,"Home Bar",,Presentment,,"Main Account",-12,12,EUR,1
+2025-11-13,2025-11-12,"TESLA CANTINE",,Presentment,,"Main Account",-7.1,7.1,EUR,1
+2025-11-14,2025-11-13,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-11-15,2025-11-15,"Tommaso Batacchi",LT473250043398366091,"Debit Transfer","Sent from N26","Main Account",-100.00,,,
+2025-11-15,2025-11-15,"ILIAD ITALIA",,Presentment,,"Main Account",-9.99,9.99,EUR,1
+2025-11-16,2025-11-15,"Ditsch Berlin Ost-Bhf.",,Presentment,,"Main Account",-4.75,4.75,EUR,1
+2025-11-16,2025-11-15,"FRIEDRICH APOTHEKE",,Presentment,,"Main Account",-24.9,24.9,EUR,1
+2025-11-17,2025-11-17,"Mortgage Savings",,"Credit Transfer",,"Main Account",500.00,,,
+2025-11-17,2025-11-17,"Stephanie Furreta Bento",DE43100101788921740370,"Credit Transfer","Half of the rent - Stephi","Main Account",455.00,,,
+2025-11-18,2025-11-18,"Tommaso Batacchi",LT473250043398366091,"Debit Transfer","Sent from N26","Main Account",-100.00,,,
+2025-11-18,2025-11-18,"Wilhelm Hilpert Haus",DE81100208900024702561,"Direct Debit","Zahlung 11.2025 25.14004, 2.07.07/35/7.OG","Main Account",-40.00,,,
+2025-11-18,2025-11-18,"N26 Bank",,Fee,"Fee due to SEPA Direct Debit of 870.94 from Wilhelm Hilpert Haus with mandate ID 653254add6af45f39d3c242b809695a0. It has been rejected due to insufficient funds.","Main Account",-3,,,
+2025-11-19,2025-11-18,"Zabka NANO",,Presentment,,"Main Account",-4.48,4.48,EUR,1
+2025-11-19,2025-11-18,"Zabka NANO",,Presentment,,"Main Account",-4.63,4.63,EUR,1
+2025-11-20,2025-11-19,"My Flower",,Presentment,,"Main Account",-10,10,EUR,1
+2025-11-20,2025-11-20,"Mortgage Savings",,"Credit Transfer",,"Main Account",200.00,,,
+2025-11-20,2025-11-20,"Wilhelm Hilpert Hausverwaltung GmbH",DE81100208900024702561,"Debit Transfer","25.14004 WE 2.07.07 Bento","Main Account",-883.61,,,
+2025-11-20,2025-11-20,"Wilhelm Hilpert Hausverwaltung GmbH",DE81100208900024702561,"Debit Transfer","25.14004 WE 2.07.07 Bento - Rucklastschrift","Main Account",-12.67,,,
+2025-11-20,2025-11-19,"TESLA CANTINE",,Presentment,,"Main Account",-4.9,4.9,EUR,1
+2025-11-20,2025-11-20,"Commerzbank Fil. Berlin 1",DE46100400000107717100,"Debit Transfer","Rechnung Nr. 254888","Main Account",-41.65,,,
+2025-11-22,2025-11-21,"TESLA CANTINE",,Presentment,,"Main Account",-7.1,7.1,EUR,1
+2025-11-23,2025-11-22,"2112 LEVY RESTAURANTS",,"Presentment Refund",,"Main Account",6,6,EUR,1
+2025-11-25,2025-11-25,"Tesla Manufa. Brandenburg - Payroll",DE10502109000218622844,"Credit Transfer","Salary 112025","Main Account",3651.10,,,
+2025-11-25,2025-11-25,"Mortgage Savings",,"Debit Transfer","Income Sorter","Main Account",-1650.00,,,
+2025-11-25,2025-11-25,"Mortgage Savings",,"Credit Transfer",,"Main Account",1500.00,,,
+2025-11-25,2025-11-25,"LANDESHAUPTKASSE BERLIN",DE50100100100000082102,"Debit Transfer",0582560203845,"Main Account",-15.00,,,
+2025-11-26,2025-11-25,"Dosha Teehaus GbH",,Presentment,,"Main Account",-5.5,5.5,EUR,1
+2025-11-26,2025-11-25,"Dosha Teehaus GbH",,Presentment,,"Main Account",-5.3,5.3,EUR,1
+2025-11-26,2025-11-26,"Wilhelm Hilpert Haus",DE81100208900024702561,"Credit Transfer","ZA Mietguthaben 25.14004","Main Account",12.67,,,
+2025-11-27,2025-11-26,"TESLA CANTINE",,Presentment,,"Main Account",-4.5,4.5,EUR,1
+2025-11-27,2025-11-26,"HENNIG S BACKSTUBE",,Presentment,,"Main Account",-1.5,1.5,EUR,1
+2025-11-27,2025-11-27,"T Batacchi & S Furreta Bento",DE24100101786667704764,"Debit Transfer","Adding to joint","Main Account",-100.00,,,
+2025-11-29,2025-11-28,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-11-30,2025-11-29,biglietteriamusei.vati,,Presentment,,"Main Account",-65,65,EUR,1
+2025-12-01,2025-12-01,"Stephanie Furreta Bento",DE43100101788921740370,"Credit Transfer","Rent- Stephi","Main Account",700.00,,,
+2025-12-01,2025-12-01,"Stephanie Furreta Bento",DE43100101788921740370,"Credit Transfer","Jysk - Stephi","Main Account",549.00,,,
+2025-12-01,2025-12-01,"AMERICAN EXPRESS EUROPE S.A. (Germany branch)",DE05500700100095599700,"Direct Debit","01KAWPYP3EYRFW6MM5K047BEC1","Main Account",-2039.25,,,
+2025-12-02,2025-12-02,Feather,IE30CITI99005132956548,"Direct Debit","Feather - Insurance","Main Account",-4.94,,,
+2025-12-03,2025-12-03,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 50227329-0f28-4092-9f6b-b6d26e375440","Main Account",-350.00,,,
+2025-12-03,2025-12-03,"Wilhelm Hilpert Haus",DE81100208900024702561,"Direct Debit","Zahlung 12.2025 25.14004, 2.07.07/35/7.OG","Main Account",-1741.89,,,
+2025-12-04,2025-12-04,"Busverkehr Oder-Spree GmbH",DE61100100100152818104,"Direct Debit","ABRECHNUNG A43356 12/2025","Main Account",-30.10,,,
+2025-12-04,2025-12-03,"Zabka NANO",,Presentment,,"Main Account",-1.44,1.44,EUR,1
+2025-12-05,2025-12-03,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-12-05,2025-12-05,"OTTO Payments GmbH",DE12201207003100990333,"Debit Transfer","CAH-FNX-DXQ-7D5 QR01","Main Account",-89.40,,,
+2025-12-06,2025-12-04,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-12-07,2025-12-05,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-12-08,2025-12-06,"Zabka NANO",,Presentment,,"Main Account",-3.97,3.97,EUR,1
+2025-12-09,2025-12-06,"TESLA CANTINE",,Presentment,,"Main Account",-5.6,5.6,EUR,1
+2025-12-10,2025-12-07,Woolworth,,Presentment,,"Main Account",-4,4,EUR,1
+2025-12-10,2025-12-07,"Viet Nam & Sushi Bar",,Presentment,,"Main Account",-45,45,EUR,1
+2025-12-11,2025-12-11,"TESLA CANTINE",,Presentment,,"Main Account",-5.4,5.4,EUR,1
+2025-12-12,2025-12-12,"FADE CLUB Cutbusser I",,Presentment,,"Main Account",-19,19,EUR,1
+2025-12-12,2025-12-12,"Zabka NANO",,Presentment,,"Main Account",-3.23,3.23,EUR,1
+2025-12-13,2025-12-12,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-12-13,2025-12-10,"TESLA CANTINE",,Presentment,,"Main Account",-4,4,EUR,1
+2025-12-13,2025-12-10,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2025-12-13,2025-12-10,"TESLA CANTINE",,Presentment,,"Main Account",-2.5,2.5,EUR,1
+2025-12-13,2025-12-10,"TESLA CANTINE",,"Presentment Refund",,"Main Account",4,4,EUR,1
+2025-12-13,2025-12-13,"T Batacchi & S Furreta Bento",DE24100101786667704764,"Debit Transfer","Sent from N26","Main Account",-15.00,,,
+2025-12-14,2025-12-13,"PPO Goluski",,Presentment,,"Main Account",-13.04,55,PLN,0.2370909091
+2025-12-14,2025-12-14,"T Batacchi & S Furreta Bento",DE24100101786667704764,"Debit Transfer","Sent from N26","Main Account",-40.00,,,
+2025-12-14,2025-12-14,"T Batacchi & S Furreta Bento",DE24100101786667704764,"Debit Transfer","Sent from N26","Main Account",-40.00,,,
+2025-12-15,2025-12-15,"ILIAD ITALIA",,Presentment,,"Main Account",-9.99,9.99,EUR,1
+2025-12-15,2025-12-15,"ROSSMANN 36",,Presentment,,"Main Account",-3.45,3.45,EUR,1
+2025-12-15,2025-12-15,"ORLEN STACJA NR 422",,Presentment,,"Main Account",-69.85,69.85,EUR,1
+2025-12-15,2025-12-15,QUASA,,Presentment,,"Main Account",-3.08,13,PLN,0.2369230769
+2025-12-17,2025-12-17,"Mortgage Savings",,"Credit Transfer",,"Main Account",200.00,,,
+2025-12-17,2025-12-17,"Mortgage Savings",,"Credit Transfer",,"Main Account",300.00,,,
+2025-12-17,2025-12-17,"TESLA CANTINE",,Presentment,,"Main Account",-9,9,EUR,1
+2025-12-18,2025-12-18,"Travelex Deutschland G",,Presentment,,"Main Account",-200,200,EUR,1
+2025-12-19,2025-12-18,"Ditsch Berlin Ost-Bhf",,Presentment,,"Main Account",-2.5,2.5,EUR,1
+2025-12-19,2025-12-19,"BANQUE MISR sphinix",,Presentment,,"Main Account",-21.94,25.75,USD,0.852038835
+2025-12-21,2025-12-20,"PAYMOB-*meat party foo",,Presentment,,"Main Account",-12.82,713,EGP,0.0179803647
+2025-12-21,2025-12-20,"PAYMOB-*Tee Pee",,Presentment,,"Main Account",-10.07,560,EGP,0.0179821429
+2025-12-21,2025-12-20,"OVIO MAADI",,Presentment,,"Main Account",-11.14,619.27,EGP,0.0179889224
+2025-12-21,2025-12-20,"E FINANCE MUSEUMS",,Presentment,,"Main Account",-12.58,700,EGP,0.0179714286
+2025-12-22,2025-12-22,"OVIO MAADI",,Presentment,,"Main Account",-14.38,800,EGP,0.017975
+2025-12-23,2025-12-23,"Tesla Manufa. Brandenburg - Payroll",DE10502109000218622844,"Credit Transfer","Salary 122025","Main Account",8940.19,,,
+2025-12-23,2025-12-23,"Mortgage Savings",,"Debit Transfer","Income Sorter","Main Account",-1650.00,,,
+2025-12-23,2025-12-23,"Mortgage Savings",,"Debit Transfer",,"Main Account",-5000.00,,,
+2025-12-24,2025-12-24,"Equities Settlement account",DE36100110012854407302,"Credit Transfer","N26 cash dividend transaction - transaction ID f68e7012-c04c-6a87-5846-20bf8f6bac50 - ISIN IE000SIZJ2B2","Main Account",44.25,,,
+2025-12-24,2025-12-24,"GEST SPA",,Presentment,,"Main Account",-1.7,1.7,EUR,1
+2025-12-25,2025-12-24,BRAUMEISTER,,Presentment,,"Main Account",-5,5,EUR,1
+2025-12-25,2025-12-25,"CAFFE' LIETTA",,Presentment,,"Main Account",-11.2,11.2,EUR,1
+2025-12-26,2025-12-26,"OLYMPUS CLUB",,Presentment,,"Main Account",-13,13,EUR,1
+2025-12-26,2025-12-26,"Kevin Magri","IT67V0366901600621679729712","Debit Transfer","Cianci Appartamento Campobasso","Main Account",-65.00,,,
+2025-12-28,2025-12-28,"OLD WAY DI VINCENZO F.",,Presentment,,"Main Account",-12,12,EUR,1
+2025-12-29,2025-12-29,"PAYPAL *batalorenzo",,Presentment,,"Main Account",-1.39,1.39,EUR,1
+2025-12-29,2025-12-29,"RISTORANTE PESCE NOSTR",,Presentment,,"Main Account",-41.5,41.5,EUR,1
+2025-12-29,2025-12-29,"PLENITUDE ON THE ROAD-",,Presentment,,"Main Account",-44.77,44.77,EUR,1
+2025-12-30,2025-12-30,"LA FATTORIA S.R.L.",,Presentment,,"Main Account",-39.05,39.05,EUR,1
+2025-12-30,2025-12-30,CONAD,,Presentment,,"Main Account",-26.44,26.44,EUR,1
+2025-12-31,2025-12-31,"CHELAZZI ABBIGLIAMENTO",,Presentment,,"Main Account",-39,39,EUR,1
+2026-01-01,2026-01-01,"Stephanie Furreta Bento",DE43100101788921740370,"Credit Transfer","Rent- Stephi","Main Account",700.00,,,
+2026-01-01,2026-01-01,"T Batacchi & S Furreta Bento",DE24100101786667704764,"Debit Transfer","Sent from N26","Main Account",-50.00,,,
+2026-01-02,2026-01-02,"Stephanie Furreta Bento",DE43100101788921740370,"Credit Transfer","TAP Portugal (Hyrox) - Stephi","Main Account",193.80,,,
+2026-01-02,2026-01-02,"FORNO PITTI DI LEKA ER",,Presentment,,"Main Account",-19,19,EUR,1
+2026-01-02,2026-01-02,"T Batacchi & S Furreta Bento",DE24100101786667704764,"Debit Transfer","Sent from N26","Main Account",-45.00,,,
+2026-01-02,2026-01-02,BOBOLISOUVENIR,,Presentment,,"Main Account",-7.8,7.8,EUR,1
+2026-01-02,2026-01-02,"Rundfunk ARD, ZDF, DRadio",DE85500500000000234567,"Direct Debit","Rundfunk 01.2026 - 03.2026 Beitragsnr. 161786743 Aenderungen ganz bequem: www.rundfunkbeitrag.de","Main Account",-55.08,,,
+2026-01-02,2026-01-02,"AMERICAN EXPRESS EUROPE S.A. (Germany branch)",DE05500700100095599700,"Direct Debit","01KD9YNE9V9TH5QXRMGFAZCPBE","Main Account",-1533.18,,,
+2026-01-03,2026-01-03,"I DOLCI DI PATRIZIO",,Presentment,,"Main Account",-6.7,6.7,EUR,1
+2026-01-03,2026-01-03,"CAFFETTERIA DELLE OBLA",,Presentment,,"Main Account",-19.5,19.5,EUR,1
+2026-01-03,2026-01-03,"BIGLIETTERIA CAPPELLE",,Presentment,,"Main Account",-11,11,EUR,1
+2026-01-03,2026-01-03,"NEW DELHI ROSTICCERIA",,Presentment,,"Main Account",-31,31,EUR,1
+2026-01-05,2026-01-05,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 5904ebd7-72a7-4cf4-ab12-766d89656d51","Main Account",-350.00,,,
+2026-01-05,2026-01-05,BOBOLISOUVENIR,,Presentment,,"Main Account",-9.6,9.6,EUR,1
+2026-01-05,2026-01-05,"PITTA MINGOLLI",,Presentment,,"Main Account",-15,15,EUR,1
+2026-01-05,2026-01-05,Feather,IE30CITI99005132956548,"Direct Debit","Feather - Insurance","Main Account",-4.94,,,
+2026-01-06,2026-01-06,"Mortgage Savings",,"Credit Transfer",,"Main Account",1500.00,,,
+2026-01-07,2026-01-07,"Wilhelm Hilpert Haus",DE81100208900024702561,"Direct Debit","Zahlung 01.2026 25.14004, 2.07.07/35/7.OG","Main Account",-1741.89,,,
+2026-01-08,2026-01-08,"Busverkehr Oder-Spree GmbH",DE61100100100152818104,"Direct Debit","ABRECHNUNG A43356 01/2026","Main Account",-32.00,,,
+2026-01-08,2026-01-08,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2026-01-09,2026-01-09,"TESLA CANTINE",,Presentment,,"Main Account",-3.9,3.9,EUR,1
+2026-01-10,2026-01-10,"T Batacchi & S Furreta Bento",DE24100101786667704764,"Debit Transfer","Sent from N26","Main Account",-50.00,,,
+2026-01-11,2026-01-11,KISORO,,Presentment,,"Main Account",-3.8,3.8,EUR,1
+2026-01-12,2026-01-12,"SERVICE NAVIGO",,Presentment,,"Main Account",-2.55,2.55,EUR,1
+2026-01-12,2026-01-12,"CARREFOUR EXPRES",,Presentment,,"Main Account",-1.38,1.38,EUR,1
+2026-01-12,2026-01-12,"SERVICE NAVIGO",,Presentment,,"Main Account",-2.55,2.55,EUR,1
+2026-01-12,2026-01-12,"SERVICE NAVIGO",,Presentment,,"Main Account",-2.55,2.55,EUR,1
+2026-01-12,2026-01-12,"Taxfix SE",DE52100190001000027873,"Direct Debit","Taxfix SE Taxfix SE","Main Account",-39.99,,,
+2026-01-13,2026-01-13,Yummus,,Presentment,,"Main Account",-14.3,14.3,EUR,1
+2026-01-13,2026-01-13,"FREIBURGER KOMMUNALBAU",,Presentment,,"Main Account",-54,54,EUR,1
+2026-01-13,2026-01-13,"BEIM HACKL",,Presentment,,"Main Account",-39.1,39.1,EUR,1
+2026-01-14,2026-01-14,"MARKTBÄCKEREI DREHER V",,Presentment,,"Main Account",-10.85,10.85,EUR,1
+2026-01-15,2026-01-15,"Meat and Greet Gastron",,Presentment,,"Main Account",-65,65,EUR,1
+2026-01-15,2026-01-15,"ILIAD ITALIA",,Presentment,,"Main Account",-9.99,9.99,EUR,1
+2026-01-15,2026-01-15,"T Batacchi & S Furreta Bento",DE24100101786667704764,"Debit Transfer","Sent from N26","Main Account",-50.00,,,
+2026-01-16,2026-01-16,"Restaurant Feinhaid",,Presentment,,"Main Account",-27.5,27.5,EUR,1
+2026-01-17,2026-01-17,"T Batacchi & S Furreta Bento",DE24100101786667704764,"Debit Transfer","Sent from N26","Main Account",-50.00,,,
+2026-01-17,2026-01-17,"TESLA CANTINE",,Presentment,,"Main Account",-6,6,EUR,1
+2026-01-18,2026-01-18,"BOWLING WORLD BERLIN",,Presentment,,"Main Account",-81,81,EUR,1
+2026-01-19,2026-01-19,"T Batacchi & S Furreta Bento",DE24100101786667704764,"Debit Transfer","Sent from N26","Main Account",-20.00,,,
+2026-01-20,2026-01-20,"TESLA CANTINE",,Presentment,,"Main Account",-3.5,3.5,EUR,1
+2026-01-21,2026-01-21,"TESLA CANTINE",,Presentment,,"Main Account",-3.5,3.5,EUR,1
+2026-01-22,2026-01-22,"FADE CLUB Cutbusser I",,Presentment,,"Main Account",-19,19,EUR,1
+2026-01-22,2026-01-22,"TESLA CANTINE",,Presentment,,"Main Account",-4.5,4.5,EUR,1
+2026-01-23,2026-01-23,"Tesla Manufa. Brandenburg - Payroll",DE10502109000218622844,"Credit Transfer","Salary 012026","Main Account",3779.94,,,
+2026-01-23,2026-01-23,"Mortgage Savings",,"Debit Transfer","Income Sorter","Main Account",-750.00,,,
+2026-01-23,2026-01-23,"TESLA CANTINE",,Presentment,,"Main Account",-3.5,3.5,EUR,1
+2026-01-24,2026-01-24,"Mortgage Savings",,"Credit Transfer",,"Main Account",3000.00,,,
+2026-01-24,2026-01-24,"T Batacchi & S Furreta Bento",DE24100101786667704764,"Debit Transfer","Sent from N26","Main Account",-50.00,,,
+2026-01-24,2026-01-24,"Pizza al taglio",,Presentment,,"Main Account",-33.3,33.3,EUR,1
+2026-01-24,2026-01-24,"DITTA DI PALLESCHI DAN",,Presentment,,"Main Account",-60,60,EUR,1
+2026-01-24,2026-01-24,"IL PICCOLO DIAVOLO",,Presentment,,"Main Account",-18,18,EUR,1
+2026-01-25,2026-01-25,"MANCINELLI S.N.C. DI M",,Presentment,,"Main Account",-34,34,EUR,1
+2026-01-25,2026-01-25,"PEPY S BAR",,Presentment,,"Main Account",-2.8,2.8,EUR,1
+2026-01-26,2026-01-26,"CARALE CAFFE",,Presentment,,"Main Account",-8,8,EUR,1
+2026-01-26,2026-01-26,"VERGNANO COLADIRIENZO",,Presentment,,"Main Account",-8.6,8.6,EUR,1
+2026-01-26,2026-01-26,"PRATI SRL",,Presentment,,"Main Account",-42,42,EUR,1
+2026-01-26,2026-01-26,"WWW.MIDATICKET.IT - Co",,Presentment,,"Main Account",-20,20,EUR,1
+2026-01-26,2026-01-26,"TENNIS ROMA",,Presentment,,"Main Account",-28,28,EUR,1
+2026-01-27,2026-01-27,"ZAHLUNGSVERKEHR BERLINER FINANZAEMTER",DE22100500006600046013,"Credit Transfer","ERSTATT.014/034/05539 EST-VERANL. 23","Main Account",377.00,,,
+2026-01-27,2026-01-27,"AMERICAN EXPRESS EUROPE S.A. (Germany branch)",DE05500700100095599700,"Direct Debit","01KFSPM6QFGW1PWFM63RHZZGAA","Main Account",-3762.32,,,
+2026-01-27,2026-01-27,"TESLA CANTINE",,Presentment,,"Main Account",-6.7,6.7,EUR,1
+2026-01-27,2026-01-27,"ATAC TAP&GO",,Presentment,,"Main Account",-1.5,1.5,EUR,1
+2026-01-28,2026-01-28,"TESLA CANTINE",,Presentment,,"Main Account",-4,4,EUR,1
+2026-01-29,2026-01-29,"TESLA CANTINE",,Presentment,,"Main Account",-4,4,EUR,1
+2026-01-31,2026-01-30,"TESLA CANTINE",,Presentment,,"Main Account",-8.2,8.2,EUR,1
+2026-01-31,2026-01-31,"Stephanie Furreta Bento",DE43100101788921740370,"Credit Transfer","Italy - Stephi","Main Account",136.00,,,
+2026-02-01,2026-02-01,"Stephanie Furreta Bento",DE43100101788921740370,"Credit Transfer","Rent- Stephi","Main Account",700.00,,,
+2026-02-03,2026-02-03,"Equities Settlement account",DE36100110012854407302,"Debit Transfer","N26 payment hold for buy, paymentId: 514048f4-c6d8-4903-a7f6-712eb758592b","Main Account",-350.00,,,
+2026-02-03,2026-02-03,"Stephanie Furreta Bento",DE43100101788921740370,"Credit Transfer","Target - Stephi","Main Account",70.00,,,
+2026-02-03,2026-02-03,Feather,IE30CITI99005132956548,"Direct Debit","Feather - Insurance","Main Account",-4.94,,,
+2026-02-04,2026-02-04,"Wilhelm Hilpert Haus",DE81100208900024702561,"Direct Debit","Zahlung 02.2026 25.14004, 2.07.07/35/7.OG","Main Account",-1741.89,,,
+2026-02-05,2026-02-05,"Stephanie Furreta Bento",DE43100101788921740370,"Credit Transfer","Apple Watch - Eduardo Bento","Main Account",422.00,,,
+2026-02-05,2026-02-05,"T Batacchi & S Furreta Bento",DE24100101786667704764,"Debit Transfer","Sent from N26","Main Account",-50.00,,,
+2026-02-06,2026-02-06,"Busverkehr Oder-Spree GmbH",DE61100100100152818104,"Direct Debit","ABRECHNUNG A43356 02/2026","Main Account",-32.00,,,
+2026-02-10,2026-02-10,"TESLA CANTINE",,Presentment,,"Main Account",-5,5,EUR,1
+2026-02-11,2026-02-11,"T Batacchi & S Furreta Bento",DE24100101786667704764,"Debit Transfer","Sent from N26","Main Account",-30.00,,,
+2026-02-11,2026-02-11,"HENNIG S BACKSTUBE",,Presentment,,"Main Account",-3,3,EUR,1
+2026-02-11,2026-02-11,"TESLA CANTINE",,Presentment,,"Main Account",-6.5,6.5,EUR,1
+2026-02-12,2026-02-12,"My Flower",,Presentment,,"Main Account",-10,10,EUR,1
+2026-02-13,2026-02-13,"TESLA CANTINE",,Presentment,,"Main Account",-5,5,EUR,1
+2026-02-14,2026-02-14,"TESLA CANTINE",,Presentment,,"Main Account",-6.5,6.5,EUR,1
+2026-02-15,2026-02-15,"Nonna Anna",,Presentment,,"Main Account",-69.4,69.4,EUR,1
+2026-02-15,2026-02-15,"ILIAD ITALIA",,Presentment,,"Main Account",-9.99,9.99,EUR,1
+2026-02-15,2026-02-15,"My Flower",,Presentment,,"Main Account",-15,15,EUR,1
+2026-02-17,2026-02-17,"ZABKA 90DF4CC75D5E",,Presentment,,"Main Account",-2.34,2.34,EUR,1
+2026-02-17,2026-02-17,"Francesco Cianci",DE18100101780029282892,"Credit Transfer","Inviato da Revolut","Main Account",10.00,,,
+2026-02-17,2026-02-17,"HENNIG S BACKSTUBE",,Presentment,,"Main Account",-1.65,1.65,EUR,1
+2026-02-17,2026-02-17,"TESLA CANTINE",,Presentment,,"Main Account",-5,5,EUR,1
+2026-02-18,2026-02-18,"Stephanie Furreta Bento",DE43100101788921740370,"Credit Transfer","Shipping phone","Main Account",5.00,,,
+2026-02-18,2026-02-18,"ZABKA F11D446285D0",,Presentment,,"Main Account",-2.34,2.34,EUR,1
+2026-02-18,2026-02-18,"T Batacchi & S Furreta Bento",DE24100101786667704764,"Debit Transfer","Sent from N26","Main Account",-50.00,,,
+2026-02-18,2026-02-18,"TESLA CANTINE",,Presentment,,"Main Account",-8.2,8.2,EUR,1
+2026-02-19,2026-02-19,"GEST SPA",,Presentment,,"Main Account",-1.7,1.7,EUR,1
+2026-02-20,2026-02-20,"PAYPAL *ZOXS GMBH",,Presentment,,"Main Account",-4.95,4.95,EUR,1
+2026-02-21,2026-02-21,SUFA,,Presentment,,"Main Account",-1.2,1.2,EUR,1
+2026-02-21,2026-02-21,"CENTRO OTTICO MEGAVISI",,Presentment,,"Main Account",-125,125,EUR,1
+2026-02-25,2026-02-25,"Tommaso Batacchi",DE15100101781368929673,"Credit Transfer","Sent from Revolut","Main Account",300.00,,,
+2026-02-25,2026-02-25,"Tesla Manufa. Brandenburg - Payroll",DE10502109000218622844,"Credit Transfer","Salary 022026","Main Account",3827.42,,,
+2026-02-25,2026-02-25,"Mortgage Savings",,"Debit Transfer","Income Sorter","Main Account",-750.00,,,
+2026-02-25,2026-02-25,"Mortgage Savings",,"Debit Transfer",,"Main Account",-2000.00,,,
+2026-02-25,2026-02-25,"Mortgage Savings",,"Credit Transfer","AMEX BILL PAYMENT (TESLA)","Main Account",8261.31,,,
+2026-02-25,2026-02-25,"ZABKA BE1D382F2FC1",,Presentment,,"Main Account",-2.34,2.34,EUR,1
+2026-02-25,2026-02-25,"TESLA CANTINE",,Presentment,,"Main Account",-3.5,3.5,EUR,1
+2026-02-26,2026-02-26,"My Flower",,Presentment,,"Main Account",-12,12,EUR,1

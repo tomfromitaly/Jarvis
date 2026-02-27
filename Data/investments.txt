@@ -1,0 +1,22 @@
+Core S&P 500 ETF - iShares ISIN: IE00B5BMR087
+9.61 shares 
+recurring investment of 350EUR every 3rd of the month
+
+iBonds Dec 2026 Term Euro ETF - iShares ISIN: IE000SIZJ2B2
+1114.62 shares
+not recurring 
+
+EUR Ultra-Short Income Active ETF - JPMorgan ISIN:IE00BD9MMF62
+18.69 shares
+not recurring
+
+Dollar Treasury Bond 1-3yr ETF - iShares ISIN IE00BDFK1537
+399 shares
+not recurring
+
+Tesla - RSU from work ISIN: US88160R1014
+vesting quarterly
+Dec 09 2024 Grant - 86 shares granted, 22 vested, sellable quantity 13.5 - vest quarterly in even splits
+May 11 2025 Grant - 145 shares granted, 27 vested, sellable quantity 15 - vest quarterly in even splits
+Nov 10 2025 Grant - 12 shares granted, 0 vested
+Apr 10 2026 Grant - TBD - 10k USD worth of shares at avg Apr 2026 price

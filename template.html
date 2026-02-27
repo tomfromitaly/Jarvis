@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal CFO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { mono: ['JetBrains Mono', 'monospace'] },
+          colors: {
+            bg: '#0a0a0a',
+            surface: '#141414',
+            border: '#262626',
+            green: '#22c55e',
+            red: '#ef4444',
+            muted: '#737373',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'JetBrains Mono', monospace; background: #0a0a0a; color: #e5e5e5; }
+    .card { background: rgba(20, 20, 20, 0.8); border: 1px solid #262626; border-radius: 6px; }
+    .positive { color: #22c55e; }
+    .negative { color: #ef4444; }
+    #aiResponse pre { background: #1a1a1a; padding: 0.75rem; border-radius: 4px; overflow-x: auto; }
+    #aiResponse code { background: #1a1a1a; padding: 0.125rem 0.25rem; border-radius: 2px; }
+    #aiResponse p { margin-bottom: 0.5rem; }
+    #aiResponse ul, #aiResponse ol { margin-left: 1.25rem; margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body class="min-h-screen p-4 md:p-6">
+  <div class="max-w-6xl mx-auto space-y-6">
+    <header class="border-b border-border pb-4">
+      <h1 class="text-xl font-semibold text-green">Personal CFO</h1>
+      <p class="text-sm text-muted">Data as of <span id="generatedAt">—</span></p>
+    </header>
+
+    <!-- KPI cards -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="card p-4">
+        <p class="text-xs text-muted uppercase tracking-wider mb-1">Net Worth</p>
+        <p id="kpiNetWorth" class="text-2xl font-semibold">—</p>
+        <p id="kpiPendingReimb" class="text-xs text-muted mt-1 hidden"></p>
+      </div>
+      <div class="card p-4">
+        <p class="text-xs text-muted uppercase tracking-wider mb-1">This Month Spend (Personal)</p>
+        <p id="kpiMonthSpend" class="text-2xl font-semibold">—</p>
+        <p id="kpiMonthWorkSpend" class="text-xs text-muted mt-1 hidden"></p>
+      </div>
+      <div class="card p-4">
+        <p class="text-xs text-muted uppercase tracking-wider mb-1">Savings Rate</p>
+        <p id="kpiSavingsRate" class="text-2xl font-semibold">—</p>
+      </div>
+      <div class="card p-4">
+        <p class="text-xs text-muted uppercase tracking-wider mb-1">Saved YTD</p>
+        <p id="kpiSavedYtd" class="text-2xl font-semibold">—</p>
+      </div>
+    </section>
+
+    <!-- Charts row -->
+    <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="card p-4 lg:col-span-1">
+        <p class="text-xs text-muted uppercase tracking-wider mb-3">Spending by category (this month)</p>
+        <div class="h-64">
+          <canvas id="chartDonut"></canvas>
+        </div>
+      </div>
+      <div class="card p-4 lg:col-span-2">
+        <p class="text-xs text-muted uppercase tracking-wider mb-3">Monthly trend (last 6 months)</p>
+        <div class="h-64">
+          <canvas id="chartBar"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Insight cards -->
+    <section>
+      <p class="text-xs text-muted uppercase tracking-wider mb-2">Insights</p>
+      <div id="insightCards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        <!-- filled by JS -->
+      </div>
+    </section>
+
+    <!-- Unclassified trips banner -->
+    <section id="unclassifiedBannerSection" class="hidden">
+      <div class="card p-4 border-l-4 border-amber-500/70">
+        <p class="text-sm mb-2" id="unclassifiedBannerText"></p>
+        <button type="button" id="unclassifiedBannerBtn" class="text-sm text-green hover:underline">Classify now →</button>
+      </div>
+    </section>
+
+    <!-- Trip setup (onboarding) -->
+    <section id="tripSetupSection" class="hidden">
+      <p class="text-xs text-muted uppercase tracking-wider mb-2">Trip setup (3 minutes)</p>
+      <p class="text-sm text-muted mb-4">We found trips in your flight history that need classification. This keeps your spending numbers accurate.</p>
+      <div id="onboardingFlags" class="mb-4 hidden"></div>
+      <div id="tripSetupCards" class="space-y-4">
+        <!-- filled by JS when trips_needing_review.length > 0 -->
+      </div>
+      <div id="tripSetupDownload" class="mt-4 hidden">
+        <p class="text-xs text-muted mb-2">Save this file as <code class="bg-surface px-1 rounded">Data/trips.json</code>, then re-run <code class="bg-surface px-1 rounded">python3 process.py</code> and <code class="bg-surface px-1 rounded">python3 generate.py</code>.</p>
+        <button type="button" id="downloadTripsJsonBtn" class="px-4 py-2 bg-green text-bg rounded font-semibold text-sm hover:opacity-90">Download trips.json</button>
+      </div>
+    </section>
+
+    <!-- Work trips breakdown -->
+    <section id="workTripsSection">
+      <p class="text-xs text-muted uppercase tracking-wider mb-2">Work trips</p>
+      <div id="workTripsCards" class="space-y-3">
+        <!-- filled by JS -->
+      </div>
+    </section>
+
+    <!-- Command bar + AI response -->
+    <section class="card p-4 space-y-4">
+      <label class="block">
+        <span class="text-xs text-muted uppercase tracking-wider">Ask your CFO</span>
+        <div class="mt-2 flex gap-2">
+          <span class="text-green self-center">&gt;</span>
+          <input
+            type="text"
+            id="commandInput"
+            placeholder="e.g. What's my net worth? Why was October so expensive?"
+            class="flex-1 bg-bg border border-border rounded px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-green"
+          />
+          <button
+            id="sendBtn"
+            class="px-4 py-2 bg-green text-bg rounded font-semibold text-sm hover:opacity-90"
+          >Send</button>
+        </div>
+      </label>
+      <div id="loadingIndicator" class="hidden text-muted text-sm">Thinking...</div>
+      <div id="aiResponse" class="min-h-[4rem] text-sm prose prose-invert max-w-none"></div>
+    </section>
+  </div>
+
+  <!-- API key modal -->
+  <div id="apiKeyModal" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden">
+    <div class="card p-6 max-w-md w-full mx-4">
+      <h2 class="text-lg font-semibold mb-2">OpenAI API Key</h2>
+      <p class="text-sm text-muted mb-4">Your key is stored only in this browser and never sent except to OpenAI.</p>
+      <input
+        type="password"
+        id="apiKeyInput"
+        placeholder="sk-..."
+        class="w-full bg-bg border border-border rounded px-3 py-2 text-sm mb-4"
+      />
+      <div class="flex justify-end">
+        <button id="apiKeySave" class="px-4 py-2 bg-green text-bg rounded font-semibold text-sm">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const FINANCIAL_DATA = __FINANCIAL_DATA__;
+    const INJECTED_API_KEY = "__OPENAI_API_KEY__";
+
+    const STORAGE_KEY = 'personal_cfo_openai_key';
+
+    function getApiKey() {
+      if (INJECTED_API_KEY) return INJECTED_API_KEY;
+      return localStorage.getItem(STORAGE_KEY);
+    }
+    function setApiKey(key) {
+      localStorage.setItem(STORAGE_KEY, key);
+    }
+
+    const modal = document.getElementById('apiKeyModal');
+    const apiKeyInput = document.getElementById('apiKeyInput');
+    const apiKeySave = document.getElementById('apiKeySave');
+    if (!getApiKey()) {
+      modal.classList.remove('hidden');
+    }
+    apiKeySave.addEventListener('click', () => {
+      const key = apiKeyInput.value.trim();
+      if (key) {
+        setApiKey(key);
+        modal.classList.add('hidden');
+      }
+    });
+
+    const d = FINANCIAL_DATA;
+    const nw = d.net_worth || {};
+    const monthly = d.monthly_summaries || [];
+    const categories = d.categories || {};
+    const currentMonth = d.current_month || '';
+    const insights = d.insights || [];
+    const trips = d.trips || [];
+    const tripsNeedingReview = d.trips_needing_review || [];
+    const onboardingFlags = d.onboarding_flags || [];
+
+    document.getElementById('generatedAt').textContent = d.generated_at || '—';
+
+    function fmtEur(x) {
+      if (x == null) return '—';
+      const n = Number(x);
+      return '€' + n.toLocaleString('de-DE', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+    }
+    function fmtEurSigned(x) {
+      if (x == null) return '—';
+      const n = Number(x);
+      const s = n >= 0 ? '+' : '';
+      return s + '€' + Math.abs(n).toLocaleString('de-DE', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+    }
+
+    const kpiNetWorth = document.getElementById('kpiNetWorth');
+    const total = nw.total_estimated;
+    kpiNetWorth.textContent = fmtEur(total);
+    kpiNetWorth.classList.add(total >= 0 ? 'positive' : 'negative');
+    const pendingReimb = nw.pending_work_reimbursement_eur || 0;
+    const elPendingReimb = document.getElementById('kpiPendingReimb');
+    if (pendingReimb > 0) {
+      elPendingReimb.textContent = 'Includes €' + pendingReimb.toLocaleString('de-DE', { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + ' owed by Tesla';
+      elPendingReimb.classList.remove('hidden');
+    }
+
+    const thisMonthSummary = monthly.find(m => m.month === currentMonth);
+    document.getElementById('kpiMonthSpend').textContent = fmtEur(thisMonthSummary ? (thisMonthSummary.expenses_personal || 0) : 0);
+    const elWorkSpend = document.getElementById('kpiMonthWorkSpend');
+    const workSpend = thisMonthSummary ? (thisMonthSummary.work_expenses || 0) : 0;
+    if (workSpend > 0) {
+      elWorkSpend.textContent = 'Work (reimbursed later): ' + fmtEur(workSpend);
+      elWorkSpend.classList.remove('hidden');
+    }
+
+    const savingsRate = thisMonthSummary && thisMonthSummary.savings_rate_pct != null
+      ? thisMonthSummary.savings_rate_pct
+      : (monthly.length >= 6 ? (() => {
+          const last6 = monthly.slice(-6);
+          const inc = last6.reduce((a, m) => a + (m.income || 0), 0);
+          const exp = last6.reduce((a, m) => a + (m.expenses_personal || 0), 0);
+          return inc > 0 ? ((1 - exp / inc) * 100) : null;
+        })() : null);
+    const elSavingsRate = document.getElementById('kpiSavingsRate');
+    if (savingsRate != null) {
+      elSavingsRate.textContent = savingsRate.toFixed(0) + '%';
+      elSavingsRate.classList.add(savingsRate >= 0 ? 'positive' : 'negative');
+    } else {
+      elSavingsRate.textContent = '—';
+    }
+
+    const ytdMonths = monthly.filter(m => m.month.startsWith('2026'));
+    const savedYtd = ytdMonths.reduce((acc, m) => acc + (m.income || 0) - (m.expenses_personal || 0), 0);
+    const elSaved = document.getElementById('kpiSavedYtd');
+    elSaved.textContent = fmtEurSigned(savedYtd);
+    elSaved.classList.add(savedYtd >= 0 ? 'positive' : 'negative');
+
+    const insightCards = document.getElementById('insightCards');
+    insights.slice(0, 5).forEach(text => {
+      const div = document.createElement('div');
+      div.className = 'card p-3 text-sm';
+      div.textContent = text;
+      insightCards.appendChild(div);
+    });
+
+    // Unclassified banner
+    const unclassifiedBannerSection = document.getElementById('unclassifiedBannerSection');
+    const unclassifiedBannerText = document.getElementById('unclassifiedBannerText');
+    const unclassifiedBannerBtn = document.getElementById('unclassifiedBannerBtn');
+    if (tripsNeedingReview.length > 0) {
+      const totalAmex = tripsNeedingReview.reduce((sum, t) => sum + (t.amex_charges || 0), 0);
+      const names = tripsNeedingReview.map(t => t.name).join(', ');
+      unclassifiedBannerText.textContent = names + ' ' + (tripsNeedingReview.length === 1 ? 'is' : 'are') + ' unclassified. €' + totalAmex.toLocaleString('de-DE', { maximumFractionDigits: 0 }) + ' is attributed to personal spend. Is that correct?';
+      unclassifiedBannerSection.classList.remove('hidden');
+      unclassifiedBannerBtn.addEventListener('click', () => document.getElementById('tripSetupSection').scrollIntoView({ behavior: 'smooth' }));
+    }
+
+    // Trip setup (onboarding)
+    const tripSetupSection = document.getElementById('tripSetupSection');
+    const tripSetupCards = document.getElementById('tripSetupCards');
+    const tripSetupDownload = document.getElementById('tripSetupDownload');
+    const onboardingFlagsEl = document.getElementById('onboardingFlags');
+    const tripClassifications = {};
+    if (tripsNeedingReview.length > 0) {
+      tripSetupSection.classList.remove('hidden');
+      if (onboardingFlags.length > 0) {
+        onboardingFlagsEl.classList.remove('hidden');
+        onboardingFlags.forEach(flag => {
+          const p = document.createElement('p');
+          p.className = 'text-sm text-muted mb-1';
+          p.textContent = flag;
+          onboardingFlagsEl.appendChild(p);
+        });
+      }
+      tripsNeedingReview.forEach((trip, idx) => {
+        const card = document.createElement('div');
+        card.className = 'card p-4';
+        card.innerHTML = '<p class="font-semibold text-sm mb-1">' + trip.name + '</p>' +
+          '<p class="text-xs text-muted mb-2">' + trip.dates + '</p>' +
+          '<p class="text-xs mb-2">AMEX during trip: ' + fmtEur(trip.amex_charges) + (trip.transaction_count ? ' (' + trip.transaction_count + ' tx)' : '') + '</p>' +
+          (trip.hint ? '<p class="text-xs text-muted mb-3">' + trip.hint + '</p>' : '<p class="mb-3"></p>') +
+          '<div class="flex flex-wrap gap-2" data-trip-id="' + trip.id + '">' +
+          '<button type="button" class="trip-type-btn px-3 py-1.5 rounded text-xs border border-border hover:bg-surface" data-type="WORK">Work trip</button>' +
+          '<button type="button" class="trip-type-btn px-3 py-1.5 rounded text-xs border border-border hover:bg-surface" data-type="PERSONAL">Personal</button>' +
+          '<button type="button" class="trip-type-btn px-3 py-1.5 rounded text-xs border border-border hover:bg-surface" data-type="MIXED">Mixed</button>' +
+          '</div>';
+        tripSetupCards.appendChild(card);
+        card.querySelectorAll('.trip-type-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const type = btn.dataset.type;
+            const id = card.querySelector('[data-trip-id]').dataset.tripId;
+            tripClassifications[id] = { type, name: trip.name, dates: trip.dates, start: trip.dates.split(' to ')[0], end: trip.dates.split(' to ')[1] };
+            card.querySelectorAll('.trip-type-btn').forEach(b => { b.classList.remove('bg-green', 'text-bg'); b.classList.add('border-border'); });
+            btn.classList.add('bg-green', 'text-bg'); btn.classList.remove('border-border');
+            if (Object.keys(tripClassifications).length === tripsNeedingReview.length) {
+              tripSetupDownload.classList.remove('hidden');
+            }
+          });
+        });
+      });
+    }
+    document.getElementById('downloadTripsJsonBtn').addEventListener('click', () => {
+      const parts = (d) => (d || '').split(' to ');
+      const out = tripsNeedingReview.map(t => {
+        const c = tripClassifications[t.id] || {};
+        const start = (c.start || parts(t.dates)[0] || '').trim().replace(/\./g, '-');
+        const end = (c.end || parts(t.dates)[1] || '').trim().replace(/\./g, '-');
+        return {
+          id: t.id,
+          name: c.name || t.name,
+          start: start,
+          end: end,
+          type: (c.type || 'PERSONAL').toUpperCase(),
+          reimbursement_status: (c.type || 'PERSONAL') === 'WORK' ? 'PENDING' : 'N/A'
+        };
+      });
+      const blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'trips.json';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+
+    // Work trips breakdown
+    const workTripsCards = document.getElementById('workTripsCards');
+    const workTrips = trips.filter(t => (t.type || '').toUpperCase() === 'WORK' || ((t.type || '').toUpperCase() === 'MIXED' && (t.work_total || 0) > 0));
+    if (workTrips.length === 0) {
+      workTripsCards.innerHTML = '<p class="text-sm text-muted">No work trips in dataset.</p>';
+    } else {
+      workTrips.forEach(t => {
+        const card = document.createElement('div');
+        card.className = 'card p-4';
+        const reimbLabel = t.reimbursed ? ('REIMBURSED' + (t.reimbursed_date ? ' ' + t.reimbursed_date : '')) : 'PENDING';
+        const workTotal = t.work_total != null ? t.work_total : 0;
+        const personalTotal = t.personal_during_trip_total != null ? t.personal_during_trip_total : 0;
+        const totalCost = t.total_cost != null ? t.total_cost : (workTotal + personalTotal);
+        const reimbAmount = t.reimbursed_amount != null ? t.reimbursed_amount : '';
+        card.innerHTML = '<p class="font-semibold text-sm">' + t.name + ' <span class="text-xs font-normal text-muted">' + t.dates + '</span></p>' +
+          '<p class="text-xs text-green mt-1">' + reimbLabel + '</p>' +
+          '<table class="text-xs mt-2 w-full"><tr><td class="text-muted py-0.5">Charged to AMEX</td><td class="text-right">' + fmtEur(totalCost) + '</td></tr>' +
+          '<tr><td class="text-muted py-0.5">Work-reimbursable</td><td class="text-right">' + fmtEur(workTotal) + '</td></tr>' +
+          '<tr><td class="text-muted py-0.5">Personal during trip</td><td class="text-right">' + fmtEur(personalTotal) + '</td></tr>' +
+          (reimbAmount ? '<tr><td class="text-muted py-0.5">Reimbursed via payroll</td><td class="text-right">' + fmtEur(reimbAmount) + '</td></tr>' : '') +
+          '<tr><td class="text-muted py-0.5">Net cost to you</td><td class="text-right">' + fmtEur(personalTotal) + '</td></tr></table>';
+        workTripsCards.appendChild(card);
+      });
+    }
+
+    const catData = categories[currentMonth] || {};
+    const donutLabels = Object.keys(catData);
+    const donutValues = Object.values(catData);
+    new Chart(document.getElementById('chartDonut'), {
+      type: 'doughnut',
+      data: {
+        labels: donutLabels,
+        datasets: [{ data: donutValues, backgroundColor: ['#22c55e','#3b82f6','#a855f7','#f59e0b','#ec4899','#64748b','#14b8a6','#f97316','#8b5cf6'] }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { position: 'right', labels: { color: '#a3a3a3', font: { family: 'JetBrains Mono' } } } }
+      }
+    });
+
+    const last6 = monthly.slice(-6);
+    const barLabels = last6.map(m => m.month);
+    const barPersonal = last6.map(m => m.expenses_personal || 0);
+    const barWork = last6.map(m => m.work_expenses || 0);
+    const barIncome = last6.map(m => m.income || 0);
+    new Chart(document.getElementById('chartBar'), {
+      type: 'bar',
+      data: {
+        labels: barLabels,
+        datasets: [
+          { label: 'Personal', data: barPersonal, backgroundColor: '#22c55e' },
+          { label: 'Work', data: barWork, backgroundColor: '#3b82f6' },
+          { label: 'Income', data: barIncome, type: 'line', borderColor: '#a855f7', fill: false, tension: 0.3 }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          x: { ticks: { color: '#a3a3a3' }, grid: { color: '#262626' } },
+          y: { stacked: true, ticks: { color: '#a3a3a3' }, grid: { color: '#262626' } }
+        },
+        plugins: { legend: { labels: { color: '#a3a3a3' } } }
+      }
+    });
+
+    const commandInput = document.getElementById('commandInput');
+    const sendBtn = document.getElementById('sendBtn');
+    const loadingIndicator = document.getElementById('loadingIndicator');
+    const aiResponse = document.getElementById('aiResponse');
+
+    async function sendQuestion() {
+      const q = commandInput.value.trim();
+      if (!q) return;
+      const key = getApiKey();
+      if (!key) {
+        modal.classList.remove('hidden');
+        return;
+      }
+      aiResponse.innerHTML = '';
+      loadingIndicator.classList.remove('hidden');
+      sendBtn.disabled = true;
+      try {
+        const res = await fetch('https://api.openai.com/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + key
+          },
+          body: JSON.stringify({
+            model: 'gpt-4o',
+            stream: true,
+            messages: [
+              { role: 'system', content: d.context_for_ai || '' },
+              { role: 'user', content: q }
+            ]
+          })
+        });
+        if (!res.ok) {
+          const err = await res.text();
+          aiResponse.innerHTML = '<p class="negative">Error: ' + (err || res.status) + '</p>';
+          return;
+        }
+        const reader = res.body.getReader();
+        const decoder = new TextDecoder();
+        let full = '';
+        while (true) {
+          const { value, done } = await reader.read();
+          if (done) break;
+          const chunk = decoder.decode(value, { stream: true });
+          const lines = chunk.split('\n').filter(l => l.startsWith('data: '));
+          for (const line of lines) {
+            const data = line.slice(6);
+            if (data === '[DONE]') continue;
+            try {
+              const j = JSON.parse(data);
+              const delta = j.choices && j.choices[0] && j.choices[0].delta && j.choices[0].delta.content;
+              if (delta) {
+                full += delta;
+                aiResponse.innerHTML = marked.parse(full);
+              }
+            } catch (_) {}
+          }
+        }
+        if (full) aiResponse.innerHTML = marked.parse(full);
+      } catch (e) {
+        aiResponse.innerHTML = '<p class="negative">' + e.message + '</p>';
+      } finally {
+        loadingIndicator.classList.add('hidden');
+        sendBtn.disabled = false;
+      }
+    }
+    sendBtn.addEventListener('click', sendQuestion);
+    commandInput.addEventListener('keydown', e => { if (e.key === 'Enter') sendQuestion(); });
+  </script>
+</body>
+</html>
